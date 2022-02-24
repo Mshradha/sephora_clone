@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container{
+           
+            width:90vw;
+            display:grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: repeat(200px);
+            border:2px solid black;
+            margin:auto;
+           
+            
+
+        }
+        #product{
+            display: flex;
+            border:2px solid red;
+            flex-direction: column;
+            height:500px;
+            margin:20px;
+
+        }
+
+        #imagebox{
+            width:100%;
+            height: 60%;
+        }
+
+        #imagebox>img{
+            height:100%;
+            width:100%;
+        }
+
+        #product>p{
+          margin-top: 0px;
+          margin-left:5px;
+
+        }
+
+        #brand{
+            font-weight:bolder;
+            
+        }
+        #topdiv{
+            width:100%;
+            height: 50px;
+            /* border:1px solid red; */
+            display: flex;
+            justify-content: space-around;
+        }
+        
+        body{
+            background-color: rgb(255, 255, 255);
+        }
+
+     
+        #topdiv>div{
+            /* border:1px solid red; */
+            width:150px
+        }
+        #nav{
+            width:100%;
+            
+            margin:auto;
+            /* border:1px solid red; */
+            height: 20px;
+            
+        }
+        #nav>ul{
+          margin:auto;
+          /* border:1px solid red; */
+        }
+
+        #nav>ul>li{
+           float:left;
+           background-color: black;
+           color:white;
+           width: 310px;
+           font-size: 20px;
+           list-style: none;
+           text-align: center;
+           /* padding: 0px; */
+           /* opacity: .6; */
+          
+
+        }
+
+        #nav>ul>li>ul{
+         padding:0px;
+         list-style: none;
+         line-height: 30px;
+         display: none;
+        
+     }
+
+     #nav>ul>li:hover>ul{
+         display: block;
+        
+     }
+
+     #nav>ul>li:hover{
+         background-color:white;
+         color:black;
+        
+         opacity: 0.9;
+     }
+     /* #nav>ul>li>ul>:hover{
+        background-color: white;
+        color:black
+     } */
+
+
+     #nav>ul>li>ul>li:hover{
+        background-color: rgb(0, 0, 0);
+        color:rgb(255, 255, 255)
+     }
+    
+     #wish>img{
+        height: 80%;
+         width: 40px;
+     }
+     #cart>img{
+        height: 80%;
+         width: 40px;
+     }
+     #signin>img{
+         /* padding-top: 15px; */
+         /* border:1px solid red; */
+         height: 80%;
+         width: 40px;
+     }
+     #signin{
+         font-size: 20px;
+     }
+
+        
+
+    </style>
+</head>
+<body>
+    <div id="topdiv">
+        <div onclick="window.location.href='index.html'" id="brand"><img  onclick="" src="https://www.sephora.com/img/ufe/logo.svg" alt=""></div>
+        <div onclick="window.location.href='wishlist.html'" id="wish"><img  onclick="" src="https://www.sephora.com/img/ufe/loveless.svg" alt=""></div>
+        <div onclick="window.location.href='s&l.html'" id="signin"><img  onclick="" src="https://www.sephora.com/img/ufe/icons/me-active.svg" alt="">Sign in</div>
+        <div onclick="window.location.href='cart.html'" id="cart"><img onclick="" src="https://media.gettyimages.com/vectors/retail-store-flat-doodle-icon-design-vector-id1191418637?s=2048x2048" alt=""></div>
+    </div>
+    <div id="nav">
+        <ul>
+            <li>Brand
+                <ul>
+                    <li href="">Cailery</li>
+                    <li href="" >Crown Affair</li>
+                   
+                </ul>
+            </li>
+            <li>Make up
+                <ul>
+                    <li  onclick="window.location.href='index.html'">Mascara </li>
+                    <li  onclick="window.location.href='index.html'" >Eyeliner</li>
+                    <li onclick="window.location.href='index.html'">Lipstick</li>
+                    <li  onclick="window.location.href='index.html'">Lip gloss</li>
+                    <li onclick="window.location.href='index.html'">Blush</li>
+                    <li onclick="window.location.href='index.html'">Bronzer</li>
+                </ul>
+            </li>
+            <li>Skin care
+                <ul>
+                    <li  onclick="window.location.href='index.html'">Night cream</li>
+                    <li onclick="window.location.href='index.html'">Face Oil</li>
+                    <li onclick="window.location.href='index.html'">Facewash & Cleanser</li>
+                    <li  onclick="window.location.href='index.html'">Makeup Remover</li>
+                    
+                </ul>
+            </li>
+            <li>Hair
+                <ul>
+                    <li  onclick="window.location.href='index.html'">Hair mask</li>
+                    <li onclick="window.location.href='index.html'">Hair oil</li>
+                </ul>
+            </li>
+           
+           
+        </ul>
+    </div>
+    </div>
+    <div id="bottom"></div>
+   
+    <div id="bigbox">
+
+        
+        <select id = "priceSort" onchange = "handlePriceSort()">
+          <option value="">Price Sort</option>
+          <option value="high">High to Low</option>
+          <option value="low">Low to High</option>
+      
+        </select>
+        
+       
+        <select id = "brandFilter" onchange = "filterCat()">
+          <option value="">Select Brand</option>
+          <option value="cailary">cailary</option>
+          <option value="crown">crown</option>
+        </select>
+      
+        <div id="container">
+    
+        </div>
+        
+    </div>
+</body>
+</html>
+<script>
+    var eyelinarobj=JSON.parse(localStorage.getItem("masacraEyelinar"));
+    var productArr=[] ;
+    showdata(eyelinarobj);
+    
+
+    function showdata(eyelinarobj){
+        document.getElementById("container").innerHTML="";
+
+        eyelinarobj.map(function(el){
+            var div=document.createElement("div");
+            div.setAttribute("id", "product");
+
+
+            
+            div.addEventListener("click",function(){
+            showProduct(el);
+            });
+          
+            var div2=document.createElement("div2");
+            div2.setAttribute("id", "imagebox");
+
+            var image=document.createElement("img");
+            image.setAttribute("src", el.image);
+
+            var brand=document.createElement("p");
+            brand.textContent=el.name;
+            brand.setAttribute("id","brand");
+
+            var name=document.createElement("p");
+            name.textContent=el.name2;
+
+            var colours=document.createElement("p");
+            colours.textContent=el.color;
+
+            var price=document.createElement("p");
+            price.textContent=el.price;
+
+            
+           
+
+
+            div2.append(image);
+            div.append(div2,brand,name,colours,price);
+            document.getElementById("container").append(div);
+           
+
+        });
+        
+        function showProduct(el){
+            productArr.push(el);
+            localStorage.setItem("productDetails", JSON.stringify(productArr));
+            console.log(productArr)
+            window.location.href="details.html"
+        }
+
+    }
+</script>
