@@ -14,6 +14,7 @@
             grid-template-rows: repeat(200px);
             border:2px solid black;
             margin:auto;
+            font-family: "helvetica neue",helvetica,arial,sans-serif;
            
             
 
@@ -219,6 +220,38 @@
     var bronzerArr=JSON.parse(localStorage.getItem("broArr"));
     var productArr=[] ;
     showdata(bronzerArr);
+
+
+    function filterCat(){
+      var selected = document.querySelector("#brandFilter").value;
+
+      var filterdList = mensData.filter(function(elem){
+        return elem.brandName == selected;
+      });
+      displayData(filterdList);
+      
+    }
+
+    function handlePriceSort(){
+    var selected = document.querySelector("#priceSort").value;
+     if (selected == "high"){
+
+      mensData.sort(function(a, b){
+        return Number(b.price)-Number(a.price)
+      });
+     }
+     if (selected == "low"){
+
+        mensData.sort(function(a, b){
+        return Number(a.price)-Number(b.price)
+        });
+
+      }
+      console.log(mensData);
+      displayData(mensData);
+     
+} 
+  
     
 
     function showdata(bronzerArr){
