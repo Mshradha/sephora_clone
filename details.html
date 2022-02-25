@@ -20,6 +20,19 @@
             font-family: "helvetica neue",helvetica,arial,sans-serif;
 
         }
+        #btn{
+            background-color: #CF112c;
+            height: 40px;
+            width:35%;
+            border-radius: 20px;
+            color: white;
+            font-weight: bold;
+            margin-top: 60px;
+            /* padding-top:50px; */
+        }
+        #about{
+            margin-top: 50px;
+        }
         #brand{
             font-weight: bold;
             font-size:14px;
@@ -245,6 +258,7 @@
 </html>
 <script>
     var details=JSON.parse(localStorage.getItem("productDetails"));
+    var cartArr = JSON.parse(localStorage.getItem("CartItems")) || [];
     showdetails(details);
 
 
@@ -276,14 +290,32 @@
 
             var about=document.createElement("p");
             about.textContent=el.about;
+            about.setAttribute("id","about");
 
+
+            
+            div3 = document.createElement("div")
+            var btn = document.createElement("button");
+            btn.setAttribute("id","btn");
+            btn.textContent = "Add To Basket";
+            // btn.textContent="for Standard Shipping";
+            btn.addEventListener('click', function(){
+            addToCart(el)
+            })
 
             div2.append(image);
-            div.append(brand,name,price,about);
+            div.append(brand,name,price,about,btn);
             document.getElementById("container").append(div2,div);
 
 
             
         })
+    }
+
+         function addToCart(el){
+         cartArr.push(el);
+        console.log(el);
+        localStorage.setItem("CartItems", JSON.stringify(cartArr));
+        alert("Item added Successfully")
     }
 </script>
