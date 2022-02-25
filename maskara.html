@@ -347,10 +347,10 @@
     
       <select id = "brandFilter" onchange = "filterCat()">
       <option value="">Select Brand</option>
-      <option value="caliray">caliray</option>
-      <option value="Smashbox">Smashbox</option>
-      <option value="LAWLESS">LAWLESS</option>
-      <option value="MAKEUP BY MARIO">MAKEUP BY MARIO"</option>
+      <option value="Grande Cosmetics">Grande Cosmetics</option>
+      <option value="Rare Beauty by Selena Gomez">Rare Beauty by Selena Gomez</option>
+      <option value="Milk Makeup">MILK MAKEUP</option>
+      <option value="Too faced">Too faced</option>
     
      </select>
     
@@ -411,6 +411,37 @@
     var eyeobj=JSON.parse(localStorage.getItem("mascara"));
     var productArr=[] ;
     showdata(eyeobj);
+
+    function filterCat(){
+      var selected = document.querySelector("#brandFilter").value;
+
+      var filterdList =eyeobj.filter(function(elem){
+        return elem.name == selected;
+      });
+      console.log(filterdList);
+      showdata(filterdList);
+      
+    }
+
+    function handlePriceSort(){
+    var selected = document.querySelector("#priceSort").value;
+     if (selected == "high"){
+
+        eyeobj.sort(function(a, b){
+        return Number(b.price)-Number(a.price)
+      });
+     }
+     if (selected == "low"){
+
+        eyeobj.sort(function(a, b){
+        return Number(a.price)-Number(b.price)
+        });
+
+      }
+      console.log(eyeobj);
+      showdata(eyeobj);
+
+    }
     
 
     function showdata(eyeobj){
