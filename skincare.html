@@ -347,10 +347,10 @@
     
       <select id = "brandFilter" onchange = "filterCat()">
       <option value="">Select Brand</option>
-      <option value="caliray">caliray</option>
-      <option value="Smashbox">Smashbox</option>
-      <option value="LAWLESS">LAWLESS</option>
-      <option value="MAKEUP BY MARIO">MAKEUP BY MARIO"</option>
+      <option value="Glow Recipe">Glow Recipe</option>
+      <option value="Farmacy">Farmacy</option>
+      <option value="fresh">fresh</option>
+      <option value="Youth to the people">Youth To The People</option>
     
      </select>
     
@@ -412,6 +412,37 @@
     var productArr=[] ;
     showdata(screencare);
     
+
+    function filterCat(){
+      var selected = document.querySelector("#brandFilter").value;
+
+      var filterdList =screencare.filter(function(elem){
+        return elem.name == selected;
+      });
+      console.log(filterdList);
+      showdata(filterdList);
+      
+    }
+
+    function handlePriceSort(){
+    var selected = document.querySelector("#priceSort").value;
+     if (selected == "high"){
+
+        screencare.sort(function(a, b){
+        return Number(b.price)-Number(a.price)
+      });
+     }
+     if (selected == "low"){
+
+        screencare.sort(function(a, b){
+        return Number(a.price)-Number(b.price)
+        });
+
+      }
+      console.log(screencare);
+      showdata(screencare);
+
+    }
 
     function showdata(screencare){
         document.getElementById("container").innerHTML="";
