@@ -1,0 +1,1013 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="lightslider.css">
+    <script type="text/javascript" src="Jquery.js"></script>
+    <script type="text/javascript" src="lightslider.js"></script>
+    <script src="script.js"></script>
+    <style>
+           #topdiv{
+            width:100%;
+            height: 50px;
+            /* border:1px solid red; */
+            display: flex;
+            justify-content: space-around;
+            
+        }
+        #subtop{
+           
+            /* border:1px solid red; */
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        body{
+            background-color: #FFFFFF;;
+        }
+
+     
+        #topdiv>div{
+            /* border:1px solid red; */
+            width:150px
+        }
+        #nav{
+            width:100%;
+            background-color: black;
+            margin:auto;
+            /* border:1px solid red; */
+            height: 23px;
+            /* margin-bottom: 400px; */
+            position: relative;
+            
+        }
+        .subnav1{
+        position: absolute;
+        top: 23px;
+        left: 10%;
+        /* background-color: red; */
+        }
+        .subnav2{
+            position: absolute;
+            top: 23px;
+            left: 35%;
+        }
+        .subnav3{
+            position: absolute;
+            top: 23px;
+            left: 55%;
+        }
+        
+        .subnav4{
+            position: absolute;
+            top: 23px;
+            left: 81%;
+        }
+
+
+        #searchdiv{
+            /* width: 300px; */
+            /* display: flex;  */
+            height: 30px;
+            /* border:1px solid rgb(0, 0, 0);  */
+        }
+        .search{
+            width: 100%;
+            border-radius: 8px;
+            background-color: rgb(246,248,248);
+            height: 100%;
+            /* border: 1px solid rgb(0, 0, 0); */
+        }
+
+        #nav>ul{
+          margin:auto;
+          /* border:1px solid red; */
+        }
+
+        #nav>ul>li{
+           float:left;
+           background-color: black;
+           color:white;
+           width: 310px;
+           font-size: 20px;
+           list-style: none;
+           text-align: center;
+           /* padding: 0px; */
+           /* opacity: .6; */
+          
+
+        }
+
+        #nav>ul>li>ul{
+         padding:0px;
+         list-style: none;
+         line-height: 30px;
+         display: none;
+        
+     }
+
+     #nav>ul>li:hover>ul{
+         display: block;
+        
+     }
+
+     #nav>ul>li:hover>ul{
+         background-color:white;
+         color:black;
+         
+         /* border-radius: 5px; */
+        
+         opacity: 0.6;
+     }
+
+
+     /* #nav>ul>li>ul>:hover{
+        background-color: white;
+        color:black
+     } */
+
+
+     #nav>ul>li>ul>li:hover{
+        background-color: rgb(255, 0, 0);
+        color:rgb(0, 0, 0);
+        border-bottom: 2px solid rgb(255, 255, 255);
+        ;
+     }
+    
+     #wish>img{
+        height: 80%;
+         width: 40px;
+     }
+     #cart>img{
+        height: 80%;
+         width: 40px;
+     }
+     #signin>img{
+         /* padding-top: 15px; */
+         /* border:1px solid red; */
+         height: 80%;
+         width: 40px;
+     }
+     #signin{
+         font-size: 20px;
+     }
+  
+/* footerstart>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+#outerdiv{
+
+/* border: 1px solid black; */
+height: 850px;
+font-family: sans-serif;
+background-color: black;
+
+}
+#top{
+height: 50px;
+/* border: 1px solid green; */
+width: 100%;
+background-color: rgb(204,204,204)
+
+}
+#bottom{
+height: 600px;
+/* border: 1px solid red; */
+width: 100%;
+
+}
+
+#bottom>div{
+display: flex;
+
+}
+.one{
+/* border: 1px solid green; */
+height: 100px;
+justify-content: space-evenly;
+align-items: center;
+}
+.two{
+/* border: 1px solid yellow; */
+height: 500px;
+justify-content: space-evenly;
+align-items: center;
+}
+.one>div{
+width: 200px;
+height: 80px;
+/* border: 1px solid blue; */
+display: flex;
+justify-content: space-evenly;
+
+}
+
+.two>div{
+width: 200px;
+height: 500px;
+/* border: 1px solid blue; */
+
+}
+
+.two>div:last-child{
+width: 350px;
+}
+
+.one>div:last-child{
+width: 350px;
+}
+/* p{
+font-size: 14px;
+color: white;
+} */
+.one>div>div{
+/* border: 1px solid orange; */
+height: 60px;
+}
+.img{
+width:50px ;
+}
+.text{
+width :160px
+}
+.imgl{
+width: 45px;
+}
+.textl{
+width: 350;
+}
+#last{
+
+height: 200px;
+border: 1px solid black;
+display: flex;
+justify-content: space-around;
+
+}
+#last>div{
+width: 640px;
+height: 100px;
+/* border: 1px sienna solid; */
+}
+/* .P{
+display: flex;
+border: 1px solid black;
+
+} */
+.P>a{
+margin-left: 2%;
+}
+.img>img{
+width: 50px;
+margin-top: 10px;
+
+}
+.imgl>img{
+width: 50px;
+margin-top: 10px;
+}
+h3{
+color: white;
+}
+h1{
+color: white;
+}
+#icons{
+margin-left: 50%;
+}
+a{
+color: white;
+font-size: 14px;
+padding-bottom: 3%;
+}
+.two>div>div{
+padding-bottom: 10px;
+}
+.footer{
+margin-left: 2%;
+}
+/* .imgicon>a{
+width: 100%;
+}
+*/
+.feedback{
+color: black;
+text-align: center;
+}
+.region{
+width: 30px;
+padding-top: 4%;
+}
+
+
+     /* frontpic csss>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+    #frontpic{
+        width: 90%;
+        height: 500px;
+        margin:auto;
+        /* border:1px solid red */
+    }
+    #frontpic>img{
+        width: 100%;
+    }
+   
+    p{
+        line-height: 1;
+    font-family: georgia,times,serif;
+    font-size: 32px;
+    /* margin: auto; */
+    /* align-items: center; */
+    text-align: center;
+    }
+    #offers{
+       display: grid;
+       grid-template-columns: repeat(2,1fr);
+       width: 75%;
+       /* border:1px solid red; */
+       margin: auto;
+       height: 210px;
+       gap:15px;
+       margin-top: -50px;
+    }
+    /* #offers>div{
+border:1px solid red
+    } */
+    #offers>div>img{
+        width:100%;
+        height: 100%;
+    }
+
+    #add2{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        width: 75%;
+        margin: auto;
+        gap:15px;
+        height: 340px;
+        padding-bottom: 120px;
+    }
+    /* #add2>div{
+        border:1px solid red
+    } */
+
+    #Demand{
+        width:75%;
+        height: auto;
+        margin: auto;
+        /* border:1px solid red */
+    }
+    #Demand>img{
+        width: 100%;
+        /* height: 100%; */
+        /* border:1px solid red */
+
+    }
+  /* slider css starts from here>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+  main{
+            width: 100%;
+            height: 280px;
+            margin:10px;
+            overflow: hidden;
+            position: relative;
+            /* border:1px solid green */
+        }
+    
+        span{
+            position: absolute;
+            top:30%;
+            font-size: 60px;
+            font-weight: bold;
+            color:rgb(197, 191, 191);
+            cursor:pointer;
+            left:.5%;
+            Z-index:1;
+            /* border:1px solid red */
+        }
+
+         span:nth-of-type(2){
+             left:98%;
+             text-align: right;
+         }
+         section{
+             width: 98%;
+             height:220px;
+             background-color:whitesmoke;
+             margin: 10px auto;
+             display: flex;
+             justify-content: left;
+             overflow-x: auto;
+             /* border:1px solid red */
+         }
+         section::-webkit-scrollbar{
+             visibility: hidden;
+         }
+          
+         .slide{
+             min-width: 200px;
+             height: 200px;
+             position: relative;
+             left: 0;
+             text-align: center;
+             /* padding-top: 60px; */
+             font-size: 100px;
+             font-weight: bold;
+             margin: 10px 20px;
+             color:white;
+             /* background-color: purple; */
+             transition: 0.5s;
+             /* border:1px solid rgb(0, 50, 212); */
+             border-radius: 10px;
+             
+         }
+
+         .slide>img{
+             width: 100%;
+             height: 100%;
+         }
+
+    /* slider css ends here>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+    
+    </style>
+</head>
+<body>
+    <div id="topdiv">
+        <div onclick="window.location.href='index.html'" id="brand"><img  onclick="" src="https://www.sephora.com/img/ufe/logo.svg" alt=""></div>
+        <div id="searchdiv" style="width:350px" ><input type="search"   placeholder="Search"  name="keyword" class="search"></div>
+        <div id="subtop" style="width:300px">
+            <div onclick="window.location.href='wishlist.html'" id="wish"><img  onclick="" src="https://www.sephora.com/img/ufe/loveless.svg" alt=""></div>
+            <div onclick="window.location.href='s&l.html'" id="signin"><img  onclick="" src="https://www.sephora.com/img/ufe/icons/me-active.svg" alt="">Sign in</div>
+            <div onclick="window.location.href='cart.html'" id="cart"><img onclick="" src="https://media.gettyimages.com/vectors/retail-store-flat-doodle-icon-design-vector-id1191418637?s=2048x2048" alt=""></div>
+        </div>
+       
+    </div>
+
+
+    <!-- navbar starts>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
+    <div id="nav">
+        <ul >
+            <li>Brand
+                <ul class="subnav1">
+                    <li onclick="window.location.href='cailray.html'" >Cailery</li>
+                    <li onclick="window.location.href='crown.html'" >Crown Affair</li>
+                </ul>
+            </li>
+            <li>Make up
+                <ul class="subnav2" >
+                    <li  onclick="window.location.href='Maskara.html'">Mascara </li>
+                    <li  onclick="window.location.href='eyeliner.html'" >Eyeliner</li>
+                    <li onclick="window.location.href='lips.html'">Lipstick</li>
+                    <li  onclick="window.location.href='lipgloss.html'">Lip gloss</li>
+                    <li onclick="window.location.href='cheek.html'">Blush</li>
+                    <li onclick="window.location.href='brozer.html'">Bronzer</li>
+                </ul>
+            </li>
+            <li>Skin care
+                <ul class="subnav3">
+                    
+                    <li onclick="window.location.href='faceoil.html'">Face Oil</li>
+                    <li onclick="window.location.href='cleaner.html'">Facewash & Cleanser</li>
+                    <li  onclick="window.location.href='makeupremover.html'">Makeup Remover</li>
+                    <li  onclick="window.location.href='skincare.html'">Eye Mask</li>                    
+                </ul>
+            </li>
+            <li>Hair
+                <ul class="subnav4">
+                    <li  onclick="window.location.href='index.html'">Hair mask</li>
+                    <li onclick="window.location.href='index.html'">Hair oil</li>
+                </ul>
+            </li>
+           
+           
+        </ul>
+    </div>
+
+
+<!-- frontpic>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
+
+      <div id="frontpic" onclick="window.location.href='lipgloss.html'">
+        <img src="front.png" alt="">
+    </div>
+   <!-- <p>Just Dropped</p> -->
+
+<!-- sliders>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
+  <main>
+        <span>&#139;</span>
+        <span>&#155;</span>
+        
+        <section >
+             <div class="slide"><img src="https://www.sephora.com/productimages/sku/s1118033-main-zoom.jpg?imwidth=270&pb=2020-03-sephora-value-2020&imwidth=328" alt="" class="src1"></div>
+             <div class="slide"><img src="https://www.sephora.com/productimages/sku/s2257269-main-zoom.jpg?imwidth=270&pb=2020-03-sephora-clean-2019&imwidth=328" alt="" class="src2"></div>
+             <div class="slide"><img src="https://www.sephora.com/productimages/sku/s2449593-main-zoom.jpg?imwidth=270&imwidth=328" alt="" class="src3"></div>
+             <div class="slide"><img src="https://www.sephora.com/productimages/sku/s2566412-main-zoom.jpg?imwidth=270&pb=2020-03-sephora-clean-2019&imwidth=328" alt="" class="src4"></div>
+             <div class="slide"><img src="https://www.sephora.com/productimages/sku/s2546745-main-zoom.jpg?imwidth=270&pb=clean-planet-positive-badge-2021&imwidth=328" alt="" class="src5"></div>
+             <div class="slide"><img src="https://www.sephora.com/productimages/sku/s2559078-main-zoom.jpg?imwidth=270&pb=2020-03-sephora-clean-2019&imwidth=328" alt="" class="src6"></div>
+             <div class="slide"><img src="https://www.sephora.com/productimages/sku/s2566396-main-zoom.jpg?imwidth=270&pb=2020-03-sephora-clean-2019&imwidth=328" alt="" class="src7"></div>
+             <div class="slide"><img src="https://www.sephora.com/productimages/sku/s2535128-main-zoom.jpg?imwidth=270&pb=2020-03-sephora-clean-2019&imwidth=328" alt="" class="src8"></div>
+             <div class="slide"><img src="https://www.sephora.com/productimages/sku/s2551968-main-zoom.jpg?imwidth=270&pb=clean-planet-positive-badge-2021&imwidth=328" alt="" class="src9"></div>
+             <div class="slide"><img src="https://www.sephora.com/productimages/sku/s2530863-main-zoom.jpg?imwidth=270&pb=2020-03-sephora-clean-2019&imwidth=328" alt="" class="src10"></div>
+             <div class="slide"><img src="https://www.sephora.com/productimages/sku/s1925965-main-zoom.jpg?imwidth=270&imwidth=328" alt="" class="src11"></div>
+             <div class="slide"><img src="https://www.sephora.com/productimages/sku/s2549970-main-zoom.jpg?imwidth=270&pb=2020-03-sephora-clean-2019&imwidth=328" alt="" class="src12"></div>
+        </section>
+    </main>
+
+    <div id="offers">
+        <div onclick="window.location.href='eyeliner.html'"><img src="https://www.sephora.com/contentimages/homepage/012120/Homepage/DesktopMweb/2020-01-27-hp-beauty-offer-generic-urgency-us-ca-d-slice.jpg?imwidth=482" alt=""></div>
+        <div onclick="window.location.href='eyeliner.html'"><img src="add.png" alt=""></div>
+    </div>
+
+    <p>Selling Fast</p>
+    <!-- slider 2>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
+    
+    <main>
+        <span>&#139;</span>
+        <span>&#155;</span>
+        
+        <section >
+             <div class="slide"><img src="https://www.sephora.com/productimages/sku/s1118033-main-zoom.jpg?imwidth=270&pb=2020-03-sephora-value-2020&imwidth=328" alt="" class="src1"></div>
+             <div class="slide"><img src="https://www.sephora.com/productimages/sku/s2257269-main-zoom.jpg?imwidth=270&pb=2020-03-sephora-clean-2019&imwidth=328" alt="" class="src2"></div>
+             <div class="slide"><img src="https://www.sephora.com/productimages/sku/s2449593-main-zoom.jpg?imwidth=270&imwidth=328" alt="" class="src3"></div>
+             <div class="slide"><img src="https://www.sephora.com/productimages/sku/s2566412-main-zoom.jpg?imwidth=270&pb=2020-03-sephora-clean-2019&imwidth=328" alt="" class="src4"></div>
+             <div class="slide"><img src="https://www.sephora.com/productimages/sku/s2546745-main-zoom.jpg?imwidth=270&pb=clean-planet-positive-badge-2021&imwidth=328" alt="" class="src5"></div>
+             <div class="slide"><img src="https://www.sephora.com/productimages/sku/s2559078-main-zoom.jpg?imwidth=270&pb=2020-03-sephora-clean-2019&imwidth=328" alt="" class="src6"></div>
+             <div class="slide"><img src="https://www.sephora.com/productimages/sku/s2566396-main-zoom.jpg?imwidth=270&pb=2020-03-sephora-clean-2019&imwidth=328" alt="" class="src7"></div>
+             <div class="slide"><img src="https://www.sephora.com/productimages/sku/s2535128-main-zoom.jpg?imwidth=270&pb=2020-03-sephora-clean-2019&imwidth=328" alt="" class="src8"></div>
+             <div class="slide"><img src="https://www.sephora.com/productimages/sku/s2551968-main-zoom.jpg?imwidth=270&pb=clean-planet-positive-badge-2021&imwidth=328" alt="" class="src9"></div>
+             <div class="slide"><img src="https://www.sephora.com/productimages/sku/s2530863-main-zoom.jpg?imwidth=270&pb=2020-03-sephora-clean-2019&imwidth=328" alt="" class="src10"></div>
+             <div class="slide"><img src="https://www.sephora.com/productimages/sku/s1925965-main-zoom.jpg?imwidth=270&imwidth=328" alt="" class="src11"></div>
+             <div class="slide"><img src="https://www.sephora.com/productimages/sku/s2549970-main-zoom.jpg?imwidth=270&pb=2020-03-sephora-clean-2019&imwidth=328" alt="" class="src12"></div>
+        </section>
+    </main>
+
+    <p>Value Sets</p>
+
+      <!-- slider 3>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
+
+      <main>
+        <span>&#139;</span>
+        <span>&#155;</span>
+        
+        <section >
+             <div class="slide"><img src="https://www.sephora.com/productimages/sku/s1118033-main-zoom.jpg?imwidth=270&pb=2020-03-sephora-value-2020&imwidth=328" alt="" class="src1"></div>
+             <div class="slide"><img src="https://www.sephora.com/productimages/sku/s2257269-main-zoom.jpg?imwidth=270&pb=2020-03-sephora-clean-2019&imwidth=328" alt="" class="src2"></div>
+             <div class="slide"><img src="https://www.sephora.com/productimages/sku/s2449593-main-zoom.jpg?imwidth=270&imwidth=328" alt="" class="src3"></div>
+             <div class="slide"><img src="https://www.sephora.com/productimages/sku/s2566412-main-zoom.jpg?imwidth=270&pb=2020-03-sephora-clean-2019&imwidth=328" alt="" class="src4"></div>
+             <div class="slide"><img src="https://www.sephora.com/productimages/sku/s2546745-main-zoom.jpg?imwidth=270&pb=clean-planet-positive-badge-2021&imwidth=328" alt="" class="src5"></div>
+             <div class="slide"><img src="https://www.sephora.com/productimages/sku/s2559078-main-zoom.jpg?imwidth=270&pb=2020-03-sephora-clean-2019&imwidth=328" alt="" class="src6"></div>
+             <div class="slide"><img src="https://www.sephora.com/productimages/sku/s2566396-main-zoom.jpg?imwidth=270&pb=2020-03-sephora-clean-2019&imwidth=328" alt="" class="src7"></div>
+             <div class="slide"><img src="https://www.sephora.com/productimages/sku/s2535128-main-zoom.jpg?imwidth=270&pb=2020-03-sephora-clean-2019&imwidth=328" alt="" class="src8"></div>
+             <div class="slide"><img src="https://www.sephora.com/productimages/sku/s2551968-main-zoom.jpg?imwidth=270&pb=clean-planet-positive-badge-2021&imwidth=328" alt="" class="src9"></div>
+             <div class="slide"><img src="https://www.sephora.com/productimages/sku/s2530863-main-zoom.jpg?imwidth=270&pb=2020-03-sephora-clean-2019&imwidth=328" alt="" class="src10"></div>
+             <div class="slide"><img src="https://www.sephora.com/productimages/sku/s1925965-main-zoom.jpg?imwidth=270&imwidth=328" alt="" class="src11"></div>
+             <div class="slide"><img src="https://www.sephora.com/productimages/sku/s2549970-main-zoom.jpg?imwidth=270&pb=2020-03-sephora-clean-2019&imwidth=328" alt="" class="src12"></div>
+        </section>
+    </main>
+
+    <p>Choosen For You</p>
+ <!-- slider 3>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
+ <main>
+    <span>&#139;</span>
+    <span>&#155;</span>
+    
+    <section >
+         <div class="slide"><img src="https://www.sephora.com/productimages/sku/s1118033-main-zoom.jpg?imwidth=270&pb=2020-03-sephora-value-2020&imwidth=328" alt="" class="src1"></div>
+         <div class="slide"><img src="https://www.sephora.com/productimages/sku/s2257269-main-zoom.jpg?imwidth=270&pb=2020-03-sephora-clean-2019&imwidth=328" alt="" class="src2"></div>
+         <div class="slide"><img src="https://www.sephora.com/productimages/sku/s2449593-main-zoom.jpg?imwidth=270&imwidth=328" alt="" class="src3"></div>
+         <div class="slide"><img src="https://www.sephora.com/productimages/sku/s2566412-main-zoom.jpg?imwidth=270&pb=2020-03-sephora-clean-2019&imwidth=328" alt="" class="src4"></div>
+         <div class="slide"><img src="https://www.sephora.com/productimages/sku/s2546745-main-zoom.jpg?imwidth=270&pb=clean-planet-positive-badge-2021&imwidth=328" alt="" class="src5"></div>
+         <div class="slide"><img src="https://www.sephora.com/productimages/sku/s2559078-main-zoom.jpg?imwidth=270&pb=2020-03-sephora-clean-2019&imwidth=328" alt="" class="src6"></div>
+         <div class="slide"><img src="https://www.sephora.com/productimages/sku/s2566396-main-zoom.jpg?imwidth=270&pb=2020-03-sephora-clean-2019&imwidth=328" alt="" class="src7"></div>
+         <div class="slide"><img src="https://www.sephora.com/productimages/sku/s2535128-main-zoom.jpg?imwidth=270&pb=2020-03-sephora-clean-2019&imwidth=328" alt="" class="src8"></div>
+         <div class="slide"><img src="https://www.sephora.com/productimages/sku/s2551968-main-zoom.jpg?imwidth=270&pb=clean-planet-positive-badge-2021&imwidth=328" alt="" class="src9"></div>
+         <div class="slide"><img src="https://www.sephora.com/productimages/sku/s2530863-main-zoom.jpg?imwidth=270&pb=2020-03-sephora-clean-2019&imwidth=328" alt="" class="src10"></div>
+         <div class="slide"><img src="https://www.sephora.com/productimages/sku/s1925965-main-zoom.jpg?imwidth=270&imwidth=328" alt="" class="src11"></div>
+         <div class="slide"><img src="https://www.sephora.com/productimages/sku/s2549970-main-zoom.jpg?imwidth=270&pb=2020-03-sephora-clean-2019&imwidth=328" alt="" class="src12"></div>
+         <div class="slide"><img src="https://www.sephora.com/productimages/sku/s1118033-main-zoom.jpg?imwidth=270&pb=2020-03-sephora-value-2020&imwidth=328" alt="" class="src1"></div>
+         <div class="slide"><img src="https://www.sephora.com/productimages/sku/s2257269-main-zoom.jpg?imwidth=270&pb=2020-03-sephora-clean-2019&imwidth=328" alt="" class="src2"></div>
+         <div class="slide"><img src="https://www.sephora.com/productimages/sku/s2449593-main-zoom.jpg?imwidth=270&imwidth=328" alt="" class="src3"></div>
+         <div class="slide"><img src="https://www.sephora.com/productimages/sku/s2566412-main-zoom.jpg?imwidth=270&pb=2020-03-sephora-clean-2019&imwidth=328" alt="" class="src4"></div>
+         <div class="slide"><img src="https://www.sephora.com/productimages/sku/s2546745-main-zoom.jpg?imwidth=270&pb=clean-planet-positive-badge-2021&imwidth=328" alt="" class="src5"></div>
+         <div class="slide"><img src="https://www.sephora.com/productimages/sku/s2559078-main-zoom.jpg?imwidth=270&pb=2020-03-sephora-clean-2019&imwidth=328" alt="" class="src6"></div>
+    </section>
+</main>
+
+    <p>More Beauty For You</p>
+    <div id="add2">
+        <div onclick="window.location.href='lips.html'"><img src="https://www.sephora.com/contentimages/homepage/020822/Homepage/DesktopMweb/2022-2-18-hp-bot-nav-bounceback-earn-us-ca-desktop-slice.jpeg?imwidth=221" alt=""></div>
+        <div onclick="window.location.href='crown.html'"><img src="https://www.sephora.com/contentimages/homepage/022222/Homepage/DesktopMweb/2022-02-22-hp-bot-nav-sc-sku-launches-good-skincare-desktop-us-slice.jpeg?imwidth=221" alt=""></div>
+        <div onclick="window.location.href='cailary.html'"><img src="https://www.sephora.com/contentimages/homepage/100218/Homepage/DesktopMweb/2018-10-02-hp-botnav-oct-lip-quiz-us-ca-d-slice.jpg?imwidth=221" alt=""></div>
+        <div onclick="window.location.href='faceoil.html'"><img src="https://www.sephora.com/contentimages/homepage/020221/Homepage/DesktopMweb/2021-02-01-hp-botnav-bi-rewards-generic-refresh-us-ca-d-slice.jpeg?imwidth=221" alt=""></div>
+    </div>
+
+   <div id="Demand" onclick="window.location.href='Maskara.html'">
+       <img src="https://www.sephora.com/contentimages/homepage/101221/Homepage/DesktopMweb/2021-10-13-hp-bottom-evergreen-banner-conv-hub-same-day-desktop-us-ca-slice.jpeg?imwidth=980" alt="">
+   </div>
+
+<!-- footerstarts>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
+<div id="outerdiv">
+    <!-- <div id="top">
+        <h3 class="feedback">Website feedback? Let us know </h3>
+    </div>   -->
+    <div id="bottom">
+        <div class="one">
+            <div>
+                <div class="img">
+                    <img src="https://www.sephora.com/img/ufe/icons/find-store.svg" alt=""/>
+                </div>
+                <div class="text">
+                    <p>Find a store Choose Your Store</p>
+                </div>
+            </div>
+            <div>
+                <div class="img">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQF8BSMLDHCMMuUPYe-UiJpZW2DxtlIhYRZtAJywvy4JMJmOZzKT3XoNzJlR4qvfc-gRsg&usqp=CAU" alt=""/>
+                </div>
+                <div class="text">
+                    <p>Live Beauty Help Chat is Available</p>
+                </div>
+            </div>
+            <div>
+                <div class="img">
+                    <img src="https://www.sephora.com/img/ufe/icons/call.svg" alt=""/>
+                </div>
+                <div class="text">
+                    <p>1-877-737-4672 <br>TTY:1-888-866-9845</p>
+                </div>
+            </div>
+            <div>
+                <div class="img">
+                    <img src="https://www.sephora.com/img/ufe/icons/app.svg" alt=""/>
+                </div>
+                <div class="text">
+                    <p>Get the App <br> Text "APP" to 36681<p>
+                </div>
+            </div>
+            <div>
+                <div class="imgl">
+                    <img src="https://www.sephora.com/img/ufe/icons/cc-outline-ko.svg" alt=""/>
+                </div>
+                <div class="textl">
+                    <p>Sephora Credit Card Program <br> Want 25% off your Sephora purchase?DETAILS</p> 
+                </div>
+            </div>
+        </div>
+        <div class="two">
+            <div>
+                <h3>About Sephora</h3>
+                <div>
+                     <a href="https://www.sephora.com/beauty/about-us">About Sephora</a>
+               </div>
+               <div>
+                    <a href="https://www.sephoranewsroom.com/">Newsroom</a>
+                </div>
+                <div>
+                    <a href="https://jobs.sephora.com/USA">Careers</a>
+                </div>
+                <div>
+                    <a href="https://www.sephorastands.com/">Sephora Social Impact</a>
+                </div>
+                <div>
+                    <a href="https://www.sephora.com/beauty/supply-chain-transparency">Supply Chain Transparency</a>
+                </div>
+                <div>
+                    <a href="https://www.sephora.com/beauty/affiliates">Affiliates</a>
+                </div>
+                <div>
+                    <a href="https://www.sephora-events.com/">Sephora Events</a>
+                </div>
+               <div>
+                    <a href="https://www.sephora.com/beauty/giftcards">Gift Cards</a>
+               </div>
+               <div>
+                    <a href="https://www.sephora.com/beauty/international-websites">Sephora Events</a>
+                </div>
+                <div>
+                    <a href="https://www.sephora.com/beauty/diversity-and-inclusion">Diversity and Inclusion</a>
+                </div>
+                <div>
+                    <a href="https://www.sephora.com/beauty/instagram-checkout">Checkout on Instagram</a>
+                </div>
+                    <a href="https://sephoraaccelerate.com/">Sephora Accelerate</a>
+                <div>
+                    <a href="https://www.sephora.com/beauty/vulnerability-disclosure-program">Report a Vulnerability</a>
+                </div>
+            </div>
+            <div>
+                <h3>My Sephora</h3>
+
+          <div>
+              <a href="https://www.sephora.com/beauty/about-us">Beauty Insider
+                  
+              </a>
+          </div>
+          <div>
+              <a href="https://www.sephora.com/creditcard">Sephora Credit Card
+                
+              </a>
+          </div>
+          <div>
+              <a href="https://www.sephora.com/profile/me">Community Profile
+                  
+              </a>
+          </div>
+          <div>
+              <a href="https://www.sephora.com/beauty/order-status">Order Status
+                 
+              </a>
+          </div>
+          <div>
+              <a href="https://www.sephora.com/purchase-history">Purchase History
+                 
+              </a>
+          </div>
+          <div>
+              <a href="https://www.sephora.com/profile/MyAccount">Account Settings
+                  
+              </a>
+          </div>
+          <div>
+              <a href="https://www.sephora.com/in-store-services">Beauty Advisor Recommendations
+                 
+              </a>
+          </div>
+          <div>
+              <a href="https://www.sephora.com/beauty/beauty-offers">Beauty Offers
+                 
+              </a>
+          </div>
+          <div>
+              <a href="https://www.sephora.com/beauty/best-beauty-products">Quizzes & Buying Guides
+                  
+              </a>
+          </div>
+          <div>
+              <a href="https://www.sephora.com/rewards">Rewards Bazaar
+                 
+              </a>
+          </div>
+          <div>
+              <a href="https://www.sephora.com/shopping-list">Loves
+                
+              </a>
+          </div>
+          <div>
+              <a href="https://www.sephora.com/happening/home">Book a Reservation
+                  
+              </a>
+          </div>
+               
+            </div>
+            <div>
+                <h3>Help</h3>
+                <div>
+                    <a href="https://www.sephora.com/beauty/customer-service">Customer Service
+                       
+                    </a>
+                </div>
+                <div>
+                    <a href="https://www.sephora.com/beauty/returns-exchanges">Returns & Exchanges
+                      
+                    </a>
+                </div>
+                <div>
+                    <a href="https://www.sephora.com/beauty/pick-up-delivery-options">Delivery and Pickup Options
+                        
+                    </a>
+                </div>
+                <div>
+                    <a href="https://www.sephora.com/beauty/shipping-information">Shipping
+                       
+                    </a>
+                </div>
+                <div>
+                    <a href="https://www.sephora.com/beauty/billing">Billing
+                       
+                    </a>
+                </div>
+                <div>
+                    <a href="https://www.sephora.com/beauty/international-shipments">International Shipments
+                       
+                    </a>
+                </div>
+                <div>
+                    <a href="https://www.sephora.com/beauty/beauty-services-faq">Beauty Services FAQ
+                      
+                    </a>
+                </div>
+                <div>
+                    <a href="https://www.sephora.com/beauty/sephora-at-kohls-faq">Sephora at Kohl's
+                      
+                    </a>
+                </div>
+                <div>
+                    <a href="https://www.sephora.com/beauty/jcpenney">Sephora Inside JCPenney
+                      
+                    </a>
+                </div>
+                <div>
+                    <a href="https://www.sephora.com/happening/stores/sephora-near-me">Store Location
+                       
+                    </a>
+                </div>
+                <div>
+                    <a href="https://www.sephora.com/beauty/order-online">Online Ordering
+                       
+                    </a>
+                </div>
+                <div>
+                    <a href="https://www.sephora.com/beauty/flexible-payments-klarna">Klama
+                      
+                    </a>
+                </div>
+                <div>
+                    <a href="https://www.sephora.com/beauty/accessibility">Accessibility
+                        
+                    </a>
+                </div>
+                <div>
+                    <a href="https://community.sephora.com/t5/Customer-Support/COVID-19-UPDATE-3-31-20/td-p/5250306">Steps We're Taking to Address COVID-19
+                       
+                    </a>
+                </div>
+            </div>
+            <div>
+                <h3>Region &7 Language</h3>
+
+
+                <div > 
+                    <img class="region" src="https://www.sephora.com/img/ufe/flags/us.svg"/>
+                    <a href="">United state-English
+                      
+                    </a>
+                </div>
+                <div>
+                    <img class="region" src="https://www.sephora.com/img/ufe/flags/ca.svg"/>
+                    <a href="">Canada-English
+                   
+                    </a>
+                </div>
+                <div>
+                    <img class="region" src="https://www.sephora.com/img/ufe/flags/ca.svg"/>
+                    <a href="">Canada-Francais
+           
+                    </a>
+                </div>
+               
+            </div>
+            <div>
+                <h1>We Belong to Something Beautiful</h1>
+            </div>
+        </div>
+    </div>
+    <div id="last">
+
+        <div>
+            <div>
+                <p class="footer">2022 Sephora USA, Inc.All rights reserved.</p>
+            </div>
+            <div class="P">
+
+                <a href="https://www.sephora.com/beauty/privacy-policy">Privacy Policy</a>
+                <a href="https://www.sephora.com/terms-of-use">Terms of Use</a>
+                <a href="https://www.sephora.com/beauty/accessibility">Accessibility</a>
+                <a href="https://www.sephora.com/sitemap/departments/">Sitemap</a>
+            </div>
+        </div>
+        <div class="imgicon" >
+            <a href="https://www.instagram.com/sephora/">
+            <img id="icons" src="https://www.sephora.com/img/ufe/icons/instagram-ko.svg" alt=""/>
+            </a>
+
+            <a href="https://www.facebook.com/sephora">
+            <img src="https://www.sephora.com/img/ufe/icons/facebook-ko.svg" alt=""/>
+            </a>
+
+            <a href="https://twitter.com/sephora">
+            <img src="https://www.sephora.com/img/ufe/icons/twitter-ko.svg" alt=""/>
+            </a>
+
+            <a href="https://www.youtube.com/user/sephora/tutorials">
+            <img src="https://www.sephora.com/img/ufe/icons/youtube-ko.svg" alt=""/>
+            </a>
+
+            <a href="https://www.pinterest.com/sephora/">
+            <img src="https://www.sephora.com/img/ufe/icons/pinterest-ko.svg" alt=""/>
+            </a>
+
+            <a href="https://www.snapchat.com/add/sephora">
+            <img src="https://www.sephora.com/img/ufe/icons/snapchat-ko.svg" alt=""/>
+            </a>
+            
+            <a href="https://www.tiktok.com/@sephora">
+            <img src="https://www.sephora.com/img/ufe/icons/tiktok-ko.svg" alt=""/>
+            </a>
+        </div>
+
+    </div>
+</div>
+  
+</body>
+</html>
+
+
+<script>
+
+    var span = document.getElementsByTagName('span');
+    var div = document.getElementsByClassName('slide');
+    var l =0;
+    span[1].onclick = ()=>{
+        l++;
+        for(var i of div)
+        {
+          if(l==0){i.style.left="0px";}
+          if(l==1){i.style.left="-740px";}
+          if(l==2){i.style.left="-1480px";}
+          if(l==3){i.style.left="-2220px";}
+          if(l==4){i.style.left="-2960px";}
+          if(l>4){ l=4}
+         
+
+        }
+    }
+    span[0].onclick = ()=>{
+        l--;
+        for(var i of div)
+        {
+          if(l==0){i.style.left="0px";}
+          if(l==1){i.style.left="-740px";}
+          if(l==2){i.style.left="-1480px";}
+          if(l==3){i.style.left="-2220px";}
+        
+          if(l<0){ l=0}
+         
+
+        }
+    }
+
+    var span = document.getElementsByTagName('span');
+    var div = document.getElementsByClassName('slide');
+    var l =0;
+    span[4].onclick = ()=>{
+        l++;
+        for(var i of div)
+        {
+          if(l==0){i.style.left="0px";}
+          if(l==1){i.style.left="-740px";}
+          if(l==2){i.style.left="-1480px";}
+          if(l==3){i.style.left="-2220px";}
+          if(l==4){i.style.left="-2960px";}
+          if(l>4){ l=4}
+         
+
+        }
+    }
+    span[3].onclick = ()=>{
+        l--;
+        for(var i of div)
+        {
+          if(l==0){i.style.left="0px";}
+          if(l==1){i.style.left="-740px";}
+          if(l==2){i.style.left="-1480px";}
+          if(l==3){i.style.left="-2220px";}
+        
+          if(l<0){ l=0}
+         
+
+        }
+    }
+
+
+    var span = document.getElementsByTagName('span');
+    var div = document.getElementsByClassName('slide');
+    var l =0;
+    span[6].onclick = ()=>{
+        l++;
+        for(var i of div)
+        {
+          if(l==0){i.style.left="0px";}
+          if(l==1){i.style.left="-740px";}
+          if(l==2){i.style.left="-1480px";}
+          if(l==3){i.style.left="-2220px";}
+          if(l==4){i.style.left="-2960px";}
+          if(l>4){ l=4}
+         
+
+        }
+    }
+    span[5].onclick = ()=>{
+        l--;
+        for(var i of div)
+        {
+          if(l==0){i.style.left="0px";}
+          if(l==1){i.style.left="-740px";}
+          if(l==2){i.style.left="-1480px";}
+          if(l==3){i.style.left="-2220px";}
+        
+          if(l<0){ l=0}
+         
+
+        }
+    }
+</script>
