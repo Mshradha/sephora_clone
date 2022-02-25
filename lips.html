@@ -6,57 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        #container{
-           
-            width:90vw;
-            display:grid;
-            grid-template-columns: repeat(4,1fr);
-            grid-template-rows: repeat(200px);
-            border:2px solid black;
-            margin:auto;
-           
-            
-
-        }
-        #product{
-            display: flex;
-            border:2px solid red;
-            flex-direction: column;
-            height:500px;
-            margin:20px;
-
-        }
-
-        #imagebox{
-            width:100%;
-            height: 60%;
-        }
-
-        #imagebox>img{
-            height:100%;
-            width:100%;
-        }
-
-        #product>p{
-          margin-top: 0px;
-          margin-left:5px;
-
-        }
-
-        #brand{
-            font-weight:bolder;
-            
-        }
-        #topdiv{
+         #topdiv{
             width:100%;
             height: 50px;
             /* border:1px solid red; */
             display: flex;
             justify-content: space-around;
+            
+        }
+        #subtop{
+           
+            /* border:1px solid red; */
+            display: flex;
+            justify-content: space-between;
         }
         
         body{
-            background-color: rgb(255, 255, 255);
+            background-color: #FFFFFF;;
         }
 
      
@@ -66,12 +32,52 @@
         }
         #nav{
             width:100%;
-            
+            background-color: black;
             margin:auto;
             /* border:1px solid red; */
-            height: 20px;
+            height: 23px;
+            /* margin-bottom: 400px; */
+            position: relative;
             
         }
+        .subnav1{
+        position: absolute;
+        top: 23px;
+        left: 10%;
+        /* background-color: red; */
+        }
+        .subnav2{
+            position: absolute;
+            top: 23px;
+            left: 35%;
+        }
+        .subnav3{
+            position: absolute;
+            top: 23px;
+            left: 55%;
+        }
+        
+        .subnav4{
+            position: absolute;
+            top: 23px;
+            left: 81%;
+        }
+
+
+        #searchdiv{
+            /* width: 300px; */
+            /* display: flex;  */
+            height: 30px;
+            /* border:1px solid rgb(0, 0, 0);  */
+        }
+        .search{
+            width: 100%;
+            border-radius: 8px;
+            background-color: rgb(246,248,248);
+            height: 100%;
+            /* border: 1px solid rgb(0, 0, 0); */
+        }
+
         #nav>ul{
           margin:auto;
           /* border:1px solid red; */
@@ -104,12 +110,16 @@
         
      }
 
-     #nav>ul>li:hover{
+     #nav>ul>li:hover>ul{
          background-color:white;
          color:black;
+         
+         /* border-radius: 5px; */
         
-         opacity: 0.9;
+         opacity: 0.6;
      }
+
+
      /* #nav>ul>li>ul>:hover{
         background-color: white;
         color:black
@@ -117,8 +127,10 @@
 
 
      #nav>ul>li>ul>li:hover{
-        background-color: rgb(0, 0, 0);
-        color:rgb(255, 255, 255)
+        background-color: rgb(255, 0, 0);
+        color:rgb(0, 0, 0);
+        border-bottom: 2px solid rgb(255, 255, 255);
+        ;
      }
     
      #wish>img{
@@ -138,6 +150,131 @@
      #signin{
          font-size: 20px;
      }
+  /* product css start */
+        #container{
+           
+            width:85%;
+            display:grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: repeat(200px);
+            /* border:2px solid black; */
+            /* padding-left:300px ; */
+            /* margin-left: 300px; */
+            font-family: "helvetica neue",helvetica,arial,sans-serif;
+            padding-top: 60px;
+           
+            
+
+        }
+        #product{
+            display: flex;
+            
+            /* border:2px solid red; */
+            flex-direction: column;
+            height:500px;
+            margin:20px;
+
+        }
+        #brand{
+            font-weight: bold;
+        }
+
+        #imagebox{
+            width:100%;
+            height: 60%;
+        }
+
+        #imagebox>img{
+            height:100%;
+            width:100%;
+        }
+        #price{
+            font-weight: bold;
+        }
+        /* product css end */
+        /* main div */
+        #bigbox{
+            /* padding: 100px 20px 20px 50px; */
+            /* margin: auto; */
+            width:80%;
+           /* margin-left: 100px; */
+            height:auto;
+            /* border:2px solid blue; */
+            display: inline-flex;
+            margin-top: 50px;
+            margin: auto;
+            /* justify-content: center; */
+            /* justify-items: center; */
+            margin-left: 100px;
+            gap:30px;
+            /* padding-top: 50px; */
+
+        }
+        /* filter start */
+        #pricesort{
+            background-color: rgb(219, 210, 210);
+
+       
+        }
+       #filtershra{
+            display: flex;
+            flex-direction: column;
+            width:20%;
+            height:200px;
+            /* border:2px solid olivedrab; */
+            /* margin-top: 500px;  */
+            justify-content:space-around;
+            padding-top: 300px;
+            margin-top: 30px;
+            gap:20px
+            /* margin: auto;  */
+       }
+       #filtershra>b{
+           font-weight: bold;
+           font-size: 20px;
+           
+           /* text-align: center; */
+       }
+       #filtershra>p{
+           font-size: 14px;
+           color:#666666;
+           line-height: 0px;
+       }
+       
+    #filtershra select {
+         background-color: #f8f8f8;
+        color: rgb(12, 2, 2);
+        padding: 12px;
+        width: 250px;
+        border: none;
+        font-size: 20px;
+          }
+
+#filtershra::before {
+  /* content: "\f13a"; */
+  /* font-family: FontAwesome; */
+ 
+  top: 0;
+  right: 0;
+  width: 20%;
+  height: 100%;
+  text-align: center;
+  font-size: 28px;
+  line-height: 45px;
+  color: rgb(255, 255, 255);
+  background-color: rgba(255, 255, 255, 0.1);
+ 
+}
+
+#filtershra:hover::before {
+  color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(255, 255, 255, 0.89);
+}
+
+#filtershra select option {
+  padding: 30px;
+}
+     /* filter end */
 
         
 
@@ -146,21 +283,27 @@
 <body>
     <div id="topdiv">
         <div onclick="window.location.href='index.html'" id="brand"><img  onclick="" src="https://www.sephora.com/img/ufe/logo.svg" alt=""></div>
-        <div onclick="window.location.href='wishlist.html'" id="wish"><img  onclick="" src="https://www.sephora.com/img/ufe/loveless.svg" alt=""></div>
-        <div onclick="window.location.href='s&l.html'" id="signin"><img  onclick="" src="https://www.sephora.com/img/ufe/icons/me-active.svg" alt="">Sign in</div>
-        <div onclick="window.location.href='cart.html'" id="cart"><img onclick="" src="https://media.gettyimages.com/vectors/retail-store-flat-doodle-icon-design-vector-id1191418637?s=2048x2048" alt=""></div>
+        <div id="searchdiv" style="width:350px" ><input type="search"   placeholder="Search"  name="keyword" class="search"></div>
+        <div id="subtop" style="width:300px">
+            <div onclick="window.location.href='wishlist.html'" id="wish"><img  onclick="" src="https://www.sephora.com/img/ufe/loveless.svg" alt=""></div>
+            <div onclick="window.location.href='s&l.html'" id="signin"><img  onclick="" src="https://www.sephora.com/img/ufe/icons/me-active.svg" alt="">Sign in</div>
+            <div onclick="window.location.href='cart.html'" id="cart"><img onclick="" src="https://media.gettyimages.com/vectors/retail-store-flat-doodle-icon-design-vector-id1191418637?s=2048x2048" alt=""></div>
+        </div>
+       
     </div>
+
+
+    <!-- navbar starts>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
     <div id="nav">
-        <ul>
+        <ul >
             <li>Brand
-                <ul>
-                    <li href="">Cailery</li>
-                    <li href="" >Crown Affair</li>
-                   
+                <ul class="subnav1">
+                    <li onclick="window.location.href='index.html'" >Cailery</li>
+                    <li onclick="window.location.href='index.html'" >Crown Affair</li>
                 </ul>
             </li>
             <li>Make up
-                <ul>
+                <ul class="subnav2" >
                     <li  onclick="window.location.href='index.html'">Mascara </li>
                     <li  onclick="window.location.href='index.html'" >Eyeliner</li>
                     <li onclick="window.location.href='index.html'">Lipstick</li>
@@ -170,7 +313,7 @@
                 </ul>
             </li>
             <li>Skin care
-                <ul>
+                <ul class="subnav3">
                     <li  onclick="window.location.href='index.html'">Night cream</li>
                     <li onclick="window.location.href='index.html'">Face Oil</li>
                     <li onclick="window.location.href='index.html'">Facewash & Cleanser</li>
@@ -179,7 +322,7 @@
                 </ul>
             </li>
             <li>Hair
-                <ul>
+                <ul class="subnav4">
                     <li  onclick="window.location.href='index.html'">Hair mask</li>
                     <li onclick="window.location.href='index.html'">Hair oil</li>
                 </ul>
@@ -188,37 +331,116 @@
            
         </ul>
     </div>
-    </div>
-    <div id="bottom"></div>
-   
+    
     <div id="bigbox">
 
-        
-        <select id = "priceSort" onchange = "handlePriceSort()">
-          <option value="">Price Sort</option>
-          <option value="high">High to Low</option>
-          <option value="low">Low to High</option>
-      
-        </select>
-        
-       
-        <select id = "brandFilter" onchange = "filterCat()">
-          <option value="">Select Brand</option>
-          <option value="cailary">cailary</option>
-          <option value="crown">crown</option>
-        </select>
-      
-        <div id="container">
+        <div id="filtershra"> 
+            <b>caliray</b>
+            <p>filter</p>
+     <select id = "priceSort" onchange = "handlePriceSort()">
+      <option value="">Price Sort</option>
+      <option value="high">High to Low</option>
+      <option value="low">Low to High</option>
     
-        </div>
+     </select>
+    
+    
+      <select id = "brandFilter" onchange = "filterCat()">
+      <option value="">Select Brand</option>
+    
+      <option value="Bite Beauty">Bite Beauty</option>
+      <option value="Charlotte TILBURY">LAWLESS</option>
+      <option value="SEPHORA COLLECTION">SEPHORA COLLECTION</option>
+    
+     </select>
+    
+     <select id = "ingredient Prefernces" >
+        <option value="">Ingredient Prefernces</option>
+        <option value="Vegan(4)">Vegan(4)</option>
+        <option value="Paraben-free(4)">Paraben-free(4)</option>
+        <option value="Cruelty-free(4)">Cruelty-free(4)</option>
+        <option value="clean plant positive(4)">clean plant positive(4)</option>
+        <option value="Clean at Sephora(4)">Clean at Sephora(4)</option>
+        <option value="Sulfate-Free(4)">Sulfate-free(4)</option>
+        <option value="Antioxidant(4)">Antioxidant(4)</option>
+        <option value="Vitamin C(4)">Vitamin C(4)</option>
+         </select>
+    
+    
+       <select id = "color family" >
+        <option value="">Color family</option>
+        <option value="black">Black</option>
+        <option value="brown">Brown</option>
+        <option value="blue">Blue</option>
+        </select>   
+       
+    
+        <select id = "NEW" >
+            <option value="">New</option>
+            </select>  
+            
+        <select id = "Size" >
+            <option value="">Size</option>
+            <option value="">Mini</option>
+        </select>   
+    
+        <select id = "Shopping Prefernces" >
+            <option value="">Shopping Prefernces</option>
+            <option value="">Only at Sephora</option>
+        </select>  
         
+        <select id = "COverage" >
+            <option value="">Coverage</option>
+            <option value="">Light</option>
+        </select> 
+        
+        <select id = "Finish" >
+            <option value="">Finish</option>
+            <option value="">Mini</option>
+        </select>   
+    </div>  
+    
+     <div id="container"></div>
+    
+     
+    
     </div>
 </body>
 </html>
 <script>
-    var lipsData=JSON.parse(localStorage.getItem("lipsticAr"));
+    var lipsData=JSON.parse(localStorage.getItem("lipsticObj"));
     var productArr=[] ;
     showdata(lipsData);
+
+    function filterCat(){
+      var selected = document.querySelector("#brandFilter").value;
+
+      var filterdList =lipsData.filter(function(elem){
+        return elem.name == selected;
+      });
+      console.log(filterdList);
+      showdata(filterdList);
+      
+    }
+
+    function handlePriceSort(){
+    var selected = document.querySelector("#priceSort").value;
+     if (selected == "high"){
+
+        lipsData.sort(function(a, b){
+        return Number(b.price)-Number(a.price)
+      });
+     }
+     if (selected == "low"){
+
+        lipsData.sort(function(a, b){
+        return Number(a.price)-Number(b.price)
+        });
+
+      }
+      console.log(lipsData);
+      showdata(lipsData);
+    }
     
 
     function showdata(lipsData){
