@@ -61,136 +61,11 @@
         }
 
      
-        #topdiv>div{
-            /* border:1px solid red; */
-            width:150px
-        }
-        #nav{
-            width:100%;
-            
-            margin:auto;
-            /* border:1px solid red; */
-            height: 20px;
-            
-        }
-        #nav>ul{
-          margin:auto;
-          /* border:1px solid red; */
-        }
-
-        #nav>ul>li{
-           float:left;
-           background-color: black;
-           color:white;
-           width: 310px;
-           font-size: 20px;
-           list-style: none;
-           text-align: center;
-           /* padding: 0px; */
-           /* opacity: .6; */
-          
-
-        }
-
-        #nav>ul>li>ul{
-         padding:0px;
-         list-style: none;
-         line-height: 30px;
-         display: none;
-        
-     }
-
-     #nav>ul>li:hover>ul{
-         display: block;
-        
-     }
-
-     #nav>ul>li:hover{
-         background-color:white;
-         color:black;
-        
-         opacity: 0.9;
-     }
-     /* #nav>ul>li>ul>:hover{
-        background-color: white;
-        color:black
-     } */
-
-
-     #nav>ul>li>ul>li:hover{
-        background-color: rgb(0, 0, 0);
-        color:rgb(255, 255, 255)
-     }
-    
-     #wish>img{
-        height: 80%;
-         width: 40px;
-     }
-     #cart>img{
-        height: 80%;
-         width: 40px;
-     }
-     #signin>img{
-         /* padding-top: 15px; */
-         /* border:1px solid red; */
-         height: 80%;
-         width: 40px;
-     }
-     #signin{
-         font-size: 20px;
-     }
-
-        
 
     </style>
 </head>
 <body>
-    <div id="topdiv">
-        <div onclick="window.location.href='index.html'" id="brand"><img  onclick="" src="https://www.sephora.com/img/ufe/logo.svg" alt=""></div>
-        <div onclick="window.location.href='wishlist.html'" id="wish"><img  onclick="" src="https://www.sephora.com/img/ufe/loveless.svg" alt=""></div>
-        <div onclick="window.location.href='s&l.html'" id="signin"><img  onclick="" src="https://www.sephora.com/img/ufe/icons/me-active.svg" alt="">Sign in</div>
-        <div onclick="window.location.href='cart.html'" id="cart"><img onclick="" src="https://media.gettyimages.com/vectors/retail-store-flat-doodle-icon-design-vector-id1191418637?s=2048x2048" alt=""></div>
-    </div>
-    <div id="nav">
-        <ul>
-            <li>Brand
-                <ul>
-                    <li href="">Cailery</li>
-                    <li href="" >Crown Affair</li>
-                   
-                </ul>
-            </li>
-            <li>Make up
-                <ul>
-                    <li  onclick="window.location.href='index.html'">Mascara </li>
-                    <li  onclick="window.location.href='index.html'" >Eyeliner</li>
-                    <li onclick="window.location.href='index.html'">Lipstick</li>
-                    <li  onclick="window.location.href='index.html'">Lip gloss</li>
-                    <li onclick="window.location.href='index.html'">Blush</li>
-                    <li onclick="window.location.href='index.html'">Bronzer</li>
-                </ul>
-            </li>
-            <li>Skin care
-                <ul>
-                    <li  onclick="window.location.href='index.html'">Night cream</li>
-                    <li onclick="window.location.href='index.html'">Face Oil</li>
-                    <li onclick="window.location.href='index.html'">Facewash & Cleanser</li>
-                    <li  onclick="window.location.href='index.html'">Makeup Remover</li>
-                    
-                </ul>
-            </li>
-            <li>Hair
-                <ul>
-                    <li  onclick="window.location.href='index.html'">Hair mask</li>
-                    <li onclick="window.location.href='index.html'">Hair oil</li>
-                </ul>
-            </li>
-           
-           
-        </ul>
-    </div>
-    </div>
-    <div id="bottom"></div>
+    
    
     <div id="bigbox">
 
@@ -225,8 +100,8 @@
     function filterCat(){
       var selected = document.querySelector("#brandFilter").value;
 
-      var filterdList = mensData.filter(function(elem){
-        return elem.brandName == selected;
+      var filterdList = bronzerArr.filter(function(elem){
+        return elem.brand == selected;
       });
       displayData(filterdList);
       
@@ -236,19 +111,19 @@
     var selected = document.querySelector("#priceSort").value;
      if (selected == "high"){
 
-      mensData.sort(function(a, b){
+     bronzerArr.sort(function(a, b){
         return Number(b.price)-Number(a.price)
       });
      }
      if (selected == "low"){
 
-        mensData.sort(function(a, b){
+        bronzerArr.sort(function(a, b){
         return Number(a.price)-Number(b.price)
         });
 
       }
-      console.log(mensData);
-      displayData(mensData);
+      console.log(bronzerArr);
+      displayData(bronzerArr);
      
 } 
   
