@@ -11,6 +11,13 @@
     <script type="text/javascript" src="lightslider.js"></script>
     <script src="script.js"></script>
     <style>
+          #ship{
+           height: 40px;
+            background-color: gainsboro; 
+            color: #cf112c; 
+            text-align: center;
+          }
+        /* topdiv>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
            #topdiv{
             width:100%;
             height: 50px;
@@ -19,11 +26,18 @@
             justify-content: space-around;
             
         }
+        #brand{
+            padding-top: 5px;
+        }
         #subtop{
            
             /* border:1px solid red; */
             display: flex;
             justify-content: space-between;
+        }
+
+        #subtop>div{
+            /* border:2px solid red; */
         }
         
         body{
@@ -69,19 +83,31 @@
         }
 
 
-        #searchdiv{
-            /* width: 300px; */
-            /* display: flex;  */
-            height: 30px;
-            /* border:1px solid rgb(0, 0, 0);  */
-        }
+        
+
+
         .search{
-            width: 100%;
-            border-radius: 8px;
-            background-color: rgb(246,248,248);
-            height: 100%;
+
+            width:400px;
+            height:32px;
+            margin-left: -100px;
+            font-family:"helvetica neue",helvetica,arial,sans-serif;
+            font-size: large;
+            /* margin-left: 40px; */
+            /* margin-top: 20px; */
+            border-radius: 20px;
+            border:0px;
+            background-color: #eeeeeeea;
+            margin-top: 10px;
+
+            /* width: 100%; */
+            /* border-radius: 8px; */
+            /* background-color: rgb(246,248,248); */
+            /* height: 100%; */
             /* border: 1px solid rgb(0, 0, 0); */
         }
+
+
 
         #nav>ul{
           margin:auto;
@@ -155,6 +181,152 @@
      #signin{
          font-size: 20px;
      }
+
+     /* nav ends here>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+ /* frontpic csss>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+    #frontpic{
+        width: 90%;
+        height: 500px;
+        margin:auto;
+        /* border:1px solid red */
+    }
+    #frontpic>img{
+        width: 100%;
+    }
+   
+    p{
+        line-height: 1;
+    font-family: georgia,times,serif;
+    font-size: 32px;
+    /* margin: auto; */
+    /* align-items: center; */
+    text-align: center;
+    }
+    #offers{
+       display: grid;
+       grid-template-columns: repeat(2,1fr);
+       width: 75%;
+       /* border:1px solid red; */
+       margin: auto;
+       height: 210px;
+       gap:15px;
+       margin-top: -50px;
+    }
+    /* #offers>div{
+border:1px solid red
+    } */
+
+
+    #offers>div>img{
+        width:100%;
+        height: 100%;
+    }
+
+    #add2{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        width: 75%;
+        margin: auto;
+        gap:15px;
+        height: 340px;
+        padding-bottom: 120px;
+    }
+    #lastadd{
+        width:70%;
+        display: grid;
+        /* border:1px solid red; */
+        grid-template-columns: repeat(3,1fr);
+        gap:8px;
+        margin:auto;
+        margin-top: 40px;
+        margin-bottom: 40px;
+
+        
+
+    }
+    
+    #Demand{
+        width:75%;
+        height: auto;
+        margin: auto;
+        /* border:1px solid red */
+    }
+    #Demand>img{
+        width: 100%;
+        /* height: 100%; */
+        /* border:1px solid red */
+
+    }
+
+
+     /* slider css starts from here>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+  main{
+            width: 100%;
+            height: 280px;
+            margin:10px;
+            overflow: hidden;
+            position: relative;
+            /* border:1px solid green */
+        }
+    
+        span{
+            position: absolute;
+            top:30%;
+            font-size: 60px;
+            font-weight: bold;
+            color:rgb(197, 191, 191);
+            cursor:pointer;
+            left:.5%;
+            Z-index:1;
+            /* border:1px solid red */
+        }
+
+         span:nth-of-type(2){
+             left:98%;
+             text-align: right;
+         }
+         section{
+             width: 98%;
+             height:220px;
+             background-color:whitesmoke;
+             margin: 10px auto;
+             display: flex;
+             justify-content: left;
+             overflow-x: auto;
+             /* border:1px solid red */
+         }
+         section::-webkit-scrollbar{
+             visibility: hidden;
+         }
+          
+         .slide{
+             min-width: 200px;
+             height: 200px;
+             position: relative;
+             left: 0;
+             text-align: center;
+             /* padding-top: 60px; */
+             font-size: 100px;
+             font-weight: bold;
+             margin: 10px 20px;
+             color:white;
+             /* background-color: purple; */
+             transition: 0.5s;
+             /* border:1px solid rgb(0, 50, 212); */
+             border-radius: 10px;
+             
+         }
+
+         .slide>img{
+             width: 100%;
+             height: 100%;
+         }
+
+    /* slider css ends here>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+
+
   
 /* footerstart>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 
@@ -219,10 +391,12 @@ width: 350px;
 .one>div:last-child{
 width: 350px;
 }
-/* p{
+p{
 font-size: 14px;
 color: white;
-} */
+text-align:left;
+line-height: 18px;
+}
 .one>div>div{
 /* border: 1px solid orange; */
 height: 60px;
@@ -252,11 +426,12 @@ width: 640px;
 height: 100px;
 /* border: 1px sienna solid; */
 }
-/* .P{
+.P{
 display: flex;
 border: 1px solid black;
 
-} */
+}
+
 .P>a{
 margin-left: 2%;
 }
@@ -303,142 +478,23 @@ padding-top: 4%;
 }
 
 
-     /* frontpic csss>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
-    #frontpic{
-        width: 90%;
-        height: 500px;
-        margin:auto;
-        /* border:1px solid red */
-    }
-    #frontpic>img{
-        width: 100%;
-    }
-   
-    p{
-        line-height: 1;
-    font-family: georgia,times,serif;
-    font-size: 32px;
-    /* margin: auto; */
-    /* align-items: center; */
-    text-align: center;
-    }
-    #offers{
-       display: grid;
-       grid-template-columns: repeat(2,1fr);
-       width: 75%;
-       /* border:1px solid red; */
-       margin: auto;
-       height: 210px;
-       gap:15px;
-       margin-top: -50px;
-    }
-    /* #offers>div{
-border:1px solid red
-    } */
-    #offers>div>img{
-        width:100%;
-        height: 100%;
-    }
-
-    #add2{
-        display: grid;
-        grid-template-columns: repeat(4,1fr);
-        width: 75%;
-        margin: auto;
-        gap:15px;
-        height: 340px;
-        padding-bottom: 120px;
-    }
-    /* #add2>div{
-        border:1px solid red
-    } */
-
-    #Demand{
-        width:75%;
-        height: auto;
-        margin: auto;
-        /* border:1px solid red */
-    }
-    #Demand>img{
-        width: 100%;
-        /* height: 100%; */
-        /* border:1px solid red */
-
-    }
-  /* slider css starts from here>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
-  main{
-            width: 100%;
-            height: 280px;
-            margin:10px;
-            overflow: hidden;
-            position: relative;
-            /* border:1px solid green */
-        }
-    
-        span{
-            position: absolute;
-            top:30%;
-            font-size: 60px;
-            font-weight: bold;
-            color:rgb(197, 191, 191);
-            cursor:pointer;
-            left:.5%;
-            Z-index:1;
-            /* border:1px solid red */
-        }
-
-         span:nth-of-type(2){
-             left:98%;
-             text-align: right;
-         }
-         section{
-             width: 98%;
-             height:220px;
-             background-color:whitesmoke;
-             margin: 10px auto;
-             display: flex;
-             justify-content: left;
-             overflow-x: auto;
-             /* border:1px solid red */
-         }
-         section::-webkit-scrollbar{
-             visibility: hidden;
-         }
-          
-         .slide{
-             min-width: 200px;
-             height: 200px;
-             position: relative;
-             left: 0;
-             text-align: center;
-             /* padding-top: 60px; */
-             font-size: 100px;
-             font-weight: bold;
-             margin: 10px 20px;
-             color:white;
-             /* background-color: purple; */
-             transition: 0.5s;
-             /* border:1px solid rgb(0, 50, 212); */
-             border-radius: 10px;
-             
-         }
-
-         .slide>img{
-             width: 100%;
-             height: 100%;
-         }
-
-    /* slider css ends here>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+  
+ 
     
     </style>
 </head>
 <body>
+    
+    <div id="ship"><strong >Enjoy free shipping on all orders with code FREESHIP. See terms ▸</div>
+
+
     <div id="topdiv">
         <div onclick="window.location.href='index.html'" id="brand"><img  onclick="" src="https://www.sephora.com/img/ufe/logo.svg" alt=""></div>
-        <div id="searchdiv" style="width:350px" ><input type="search"   placeholder="Search"  name="keyword" class="search"></div>
-        <div id="subtop" style="width:300px">
-            <div onclick="window.location.href='wishlist.html'" id="wish"><img  onclick="" src="https://www.sephora.com/img/ufe/loveless.svg" alt=""></div>
+        <div id="searchdiv" style="width:350px" ><input id="searc" type="search"   placeholder="Search"  name="keyword" class="search"></div>
+        <div id="subtop" style="width:450px">
+            <div style="padding-top: 8px;"><img src="https://www.sephora.com/img/ufe/icons/stores.svg" alt="">Store and Services</div>
             <div onclick="window.location.href='s&l.html'" id="signin"><img  onclick="" src="https://www.sephora.com/img/ufe/icons/me-active.svg" alt="">Sign in</div>
+            <div onclick="window.location.href='wishlist.html'" id="wish"><img  onclick="" src="https://www.sephora.com/img/ufe/loveless.svg" alt=""></div>
             <div onclick="window.location.href='cart.html'" id="cart"><img onclick="" src="https://media.gettyimages.com/vectors/retail-store-flat-doodle-icon-design-vector-id1191418637?s=2048x2048" alt=""></div>
         </div>
        
@@ -494,10 +550,10 @@ border:1px solid red
 
 <!-- sliders>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
   <main>
-        <span>&#139;</span>
-        <span>&#155;</span>
+        <span id="frontbtn">&#139;</span>
+        <span id="backbtn"> &#155;</span>
         
-        <section >
+        <section id="product1">
              <div class="slide"><img src="https://www.sephora.com/productimages/sku/s1118033-main-zoom.jpg?imwidth=270&pb=2020-03-sephora-value-2020&imwidth=328" alt="" class="src1"></div>
              <div class="slide"><img src="https://www.sephora.com/productimages/sku/s2257269-main-zoom.jpg?imwidth=270&pb=2020-03-sephora-clean-2019&imwidth=328" alt="" class="src2"></div>
              <div class="slide"><img src="https://www.sephora.com/productimages/sku/s2449593-main-zoom.jpg?imwidth=270&imwidth=328" alt="" class="src3"></div>
@@ -522,10 +578,10 @@ border:1px solid red
     <!-- slider 2>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
     
     <main>
-        <span>&#139;</span>
-        <span>&#155;</span>
+        <span id="frontbtn1">&#139;</span>
+        <span id="backbtn1">&#155;</span>
         
-        <section >
+        <section id="product2">
              <div class="slide"><img src="https://www.sephora.com/productimages/sku/s1118033-main-zoom.jpg?imwidth=270&pb=2020-03-sephora-value-2020&imwidth=328" alt="" class="src1"></div>
              <div class="slide"><img src="https://www.sephora.com/productimages/sku/s2257269-main-zoom.jpg?imwidth=270&pb=2020-03-sephora-clean-2019&imwidth=328" alt="" class="src2"></div>
              <div class="slide"><img src="https://www.sephora.com/productimages/sku/s2449593-main-zoom.jpg?imwidth=270&imwidth=328" alt="" class="src3"></div>
@@ -546,10 +602,10 @@ border:1px solid red
       <!-- slider 3>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
 
       <main>
-        <span>&#139;</span>
-        <span>&#155;</span>
+        <span id="frontbtn2">&#139;</span>
+        <span id="backbtn2">&#155;</span>
         
-        <section >
+        <section id="product3">
              <div class="slide"><img src="https://www.sephora.com/productimages/sku/s1118033-main-zoom.jpg?imwidth=270&pb=2020-03-sephora-value-2020&imwidth=328" alt="" class="src1"></div>
              <div class="slide"><img src="https://www.sephora.com/productimages/sku/s2257269-main-zoom.jpg?imwidth=270&pb=2020-03-sephora-clean-2019&imwidth=328" alt="" class="src2"></div>
              <div class="slide"><img src="https://www.sephora.com/productimages/sku/s2449593-main-zoom.jpg?imwidth=270&imwidth=328" alt="" class="src3"></div>
@@ -566,12 +622,12 @@ border:1px solid red
     </main>
 
     <p>Choosen For You</p>
- <!-- slider 3>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
+ <!-- slider 4>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
  <main>
-    <span>&#139;</span>
-    <span>&#155;</span>
+    <span id="frontbtn">&#139;</span>
+    <span id="backbtn">&#155;</span>
     
-    <section >
+    <section id="product4">
          <div class="slide"><img src="https://www.sephora.com/productimages/sku/s1118033-main-zoom.jpg?imwidth=270&pb=2020-03-sephora-value-2020&imwidth=328" alt="" class="src1"></div>
          <div class="slide"><img src="https://www.sephora.com/productimages/sku/s2257269-main-zoom.jpg?imwidth=270&pb=2020-03-sephora-clean-2019&imwidth=328" alt="" class="src2"></div>
          <div class="slide"><img src="https://www.sephora.com/productimages/sku/s2449593-main-zoom.jpg?imwidth=270&imwidth=328" alt="" class="src3"></div>
@@ -605,11 +661,20 @@ border:1px solid red
        <img src="https://www.sephora.com/contentimages/homepage/101221/Homepage/DesktopMweb/2021-10-13-hp-bottom-evergreen-banner-conv-hub-same-day-desktop-us-ca-slice.jpeg?imwidth=980" alt="">
    </div>
 
+   <div id="lastadd">
+      <div><img src="https://tpc.googlesyndication.com/simgad/12227111328498362794" alt="" class="src1"></div>
+      <div><img src="https://tpc.googlesyndication.com/simgad/14703215163836305737" alt="" class="src2"></div>
+      <div><img src="https://tpc.googlesyndication.com/simgad/8882396802943877837" alt="" class="src3"></div>
+   </div>
+
+
 <!-- footerstarts>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
+
+
 <div id="outerdiv">
-    <!-- <div id="top">
+    <div id="top">
         <h3 class="feedback">Website feedback? Let us know </h3>
-    </div>   -->
+    </div>  
     <div id="bottom">
         <div class="one">
             <div>
@@ -624,8 +689,8 @@ border:1px solid red
                 <div class="img">
                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQF8BSMLDHCMMuUPYe-UiJpZW2DxtlIhYRZtAJywvy4JMJmOZzKT3XoNzJlR4qvfc-gRsg&usqp=CAU" alt=""/>
                 </div>
-                <div class="text">
-                    <p>Live Beauty Help Chat is Available</p>
+                <div class="text" style="width:auto;border:1px solid red">
+                    <p style="color:white;width:auto; font-size: 15px;line-height:18px;">Live Beauty Help Chat is Available</p>
                 </div>
             </div>
             <div>
@@ -946,66 +1011,66 @@ border:1px solid red
         }
     }
 
-    var span = document.getElementsByTagName('span');
-    var div = document.getElementsByClassName('slide');
-    var l =0;
+    // var span = document.getElementsByTagName('span');
+    // var div = document.getElementsByClassName('slide');
+    var m =0;
     span[4].onclick = ()=>{
-        l++;
+        m++;
         for(var i of div)
         {
-          if(l==0){i.style.left="0px";}
-          if(l==1){i.style.left="-740px";}
-          if(l==2){i.style.left="-1480px";}
-          if(l==3){i.style.left="-2220px";}
-          if(l==4){i.style.left="-2960px";}
-          if(l>4){ l=4}
+          if(m==0){i.style.left="0px";}
+          if(m==1){i.style.left="-740px";}
+          if(m==2){i.style.left="-1480px";}
+          if(m==3){i.style.left="-2220px";}
+          if(m==4){i.style.left="-2960px";}
+          if(m>4){ m=4}
          
 
         }
     }
     span[3].onclick = ()=>{
-        l--;
+        m--;
         for(var i of div)
         {
-          if(l==0){i.style.left="0px";}
-          if(l==1){i.style.left="-740px";}
-          if(l==2){i.style.left="-1480px";}
-          if(l==3){i.style.left="-2220px";}
+          if(m==0){i.style.left="0px";}
+          if(m==1){i.style.left="-740px";}
+          if(m==2){i.style.left="-1480px";}
+          if(m==3){i.style.left="-2220px";}
         
-          if(l<0){ l=0}
+          if(m<0){ m=0}
          
 
         }
     }
 
 
-    var span = document.getElementsByTagName('span');
-    var div = document.getElementsByClassName('slide');
+    // var span = document.getElementsByTagName('span');
+    // var div = document.getElementsByClassName('slide');
     var l =0;
     span[6].onclick = ()=>{
-        l++;
+        n++;
         for(var i of div)
         {
-          if(l==0){i.style.left="0px";}
-          if(l==1){i.style.left="-740px";}
-          if(l==2){i.style.left="-1480px";}
-          if(l==3){i.style.left="-2220px";}
-          if(l==4){i.style.left="-2960px";}
-          if(l>4){ l=4}
+          if(n==0){i.style.left="0px";}
+          if(n==1){i.style.left="-740px";}
+          if(n==2){i.style.left="-1480px";}
+          if(n==3){i.style.left="-2220px";}
+          if(n==4){i.style.left="-2960px";}
+          if(n>4){ n=4}
          
 
         }
     }
     span[5].onclick = ()=>{
-        l--;
+        n--;
         for(var i of div)
         {
-          if(l==0){i.style.left="0px";}
-          if(l==1){i.style.left="-740px";}
-          if(l==2){i.style.left="-1480px";}
-          if(l==3){i.style.left="-2220px";}
+          if(n==0){i.style.left="0px";}
+          if(n==1){i.style.left="-740px";}
+          if(n==2){i.style.left="-1480px";}
+          if(n==3){i.style.left="-2220px";}
         
-          if(l<0){ l=0}
+          if(n<0){ l=0}
          
 
         }
