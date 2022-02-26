@@ -1,347 +1,1106 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-    <style>
-        #container{
-            display:grid;
-            grid-template-columns: repeat(2,1fr);
-            grid-template-rows: 400px;
-            /* border:2px solid red; */
-            justify-content: center;
-            margin-left: 100px;
-            margin-right: 100px;
-            /* margin-top: 100px; */
-            padding: 70px;
-            font-family: "helvetica neue",helvetica,arial,sans-serif;
+<style>
+    #container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 400px;
+        /* border:2px solid red; */
+        justify-content: center;
+        margin-left: 100px;
+        margin-right: 100px;
+        /* margin-top: 100px; */
+        padding: 70px;
+        font-family: "helvetica neue", helvetica, arial, sans-serif;
 
-        }
-        #btn{
-            background-color: #CF112c;
-            height: 40px;
-            width:35%;
-            border-radius: 20px;
-            color: white;
-            font-weight: bold;
-            margin-top: 60px;
-            /* padding-top:50px; */
-        }
-        #about{
-            margin-top: 50px;
-        }
-        #brand{
-            font-weight: bold;
-            font-size:14px;
-            /* line-height:20%; */
-            
-            
-        }
-        #second{
-            
-            font-size: 16px;
-            
-        }
-        #price{
-            font-weight: bold;
-        }
-        #ship {
-            height: 40px;
-            background-color: gainsboro;
-            color: #cf112c;
-            text-align: center;
-        }
+    }
 
-        /* topdiv>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
-        #topdiv {
-            width: 100%;
-            height: 50px;
-            /* border:1px solid red; */
-            display: flex;
-            justify-content: space-around;
+    #btn {
+        background-color: #CF112c;
+        height: 40px;
+        width: 35%;
+        border-radius: 20px;
+        color: white;
+        font-weight: bold;
+        margin-top: 60px;
+        /* padding-top:50px; */
+    }
 
-        }
+    #about {
+        margin-top: 50px;
+    }
 
-        #brand {
-            padding-top: 5px;
-        }
-
-        #subtop {
-
-            /* border:1px solid red; */
-            display: flex;
-            justify-content: space-between;
-        }
-
-        #subtop>div {
-            /* border:2px solid red; */
-        }
-
-        body {
-            background-color: #FFFFFF;
-            ;
-        }
+    #brand {
+        font-weight: bold;
+        font-size: 14px;
+        /* line-height:20%; */
 
 
-        #topdiv>div {
-            /* border:1px solid red; */
-            width: 150px
-        }
+    }
+
+    #second {
+
+        font-size: 16px;
+
+    }
+
+    #price {
+        font-weight: bold;
+    }
+
+    #ship {
+        height: 40px;
+        background-color: gainsboro;
+        color: #cf112c;
+        text-align: center;
+    }
+
+    /* topdiv>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+    #topdiv {
+        width: 100%;
+        height: 50px;
+        /* border:1px solid red; */
+        display: flex;
+        justify-content: space-around;
+
+    }
+
+    #brand {
+        padding-top: 5px;
+    }
+
+    #subtop {
+
+        /* border:1px solid red; */
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #subtop>div {
+        /* border:2px solid red; */
+    }
+
+    body {
+        background-color: #FFFFFF;
+        ;
+    }
+
+
+    #topdiv>div {
+        /* border:1px solid red; */
+        width: 150px
+    }
 
 
 
 
-        .search {
+    .search {
 
-            width: 400px;
-            height: 32px;
-            margin-left: -100px;
-            font-family: "helvetica neue", helvetica, arial, sans-serif;
-            font-size: large;
-            /* margin-left: 40px; */
-            /* margin-top: 20px; */
-            border-radius: 20px;
-            border: 0px;
-            background-color: #eeeeeeea;
-            margin-top: 10px;
+        width: 400px;
+        height: 32px;
+        margin-left: -100px;
+        font-family: "helvetica neue", helvetica, arial, sans-serif;
+        font-size: large;
+        /* margin-left: 40px; */
+        /* margin-top: 20px; */
+        border-radius: 20px;
+        border: 0px;
+        background-color: #eeeeeeea;
+        margin-top: 10px;
 
-            /* width: 100%; */
-            /* border-radius: 8px; */
-            /* background-color: rgb(246,248,248); */
-            /* height: 100%; */
-            /* border: 1px solid rgb(0, 0, 0); */
-        }
-
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: "helvetica neue", helvetica, arial, sans-serif;
-        }
-
-        nav {
-            background-color: black;
-            /* position: fixed; */
-            width: 100%;
-            z-index: 999;
-            /* height: 65px; */
-            /* line-height: 65px; */
+        /* width: 100%; */
+        /* border-radius: 8px; */
+        /* background-color: rgb(246,248,248); */
+        /* height: 100%; */
+        /* border: 1px solid rgb(0, 0, 0); */
+    }
 
 
-        }
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "helvetica neue", helvetica, arial, sans-serif;
+    }
 
-        nav .containershra {
-            position: relative;
-            max-width: 1250px;
-            padding: 0 30 px;
-            height: 50px;
-            /* line-height: 50px; */
-            margin: auto;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            flex-wrap: wrap;
-        }
-
-        .containershra .nav-link {
-            display: inline-flex;
-        }
-
-        .nav-link li {
-            list-style: none;
-            /* color:white; */
-
-        }
-
-        .nav-link #heading>a {
-            color: antiquewhite;
-        }
-
-        .nav-link li a {
-            text-decoration: none;
-            /* color: black; */
-            font-size: 14px;
-            font-weight: 600;
-            padding: 10px 15px;
-            color: black;
-
-        }
-
-        .mega-links.white {
-            color: black;
-        }
-
-        .megabox {
-            position: absolute;
-            top: 100px;
-            width: 100%;
-            /* width: 180px; */
-            /* line-height: 45px; */
-            left: 0;
-            opacity: 0;
-            visibility: hidden;
+    nav {
+        background-color: black;
+        /* position: fixed; */
+        width: 100%;
+        z-index: 999;
+        /* height: 65px; */
+        /* line-height: 65px; */
 
 
-        }
+    }
 
-        .megabox .content {
-            background-color: white;
+    nav .containershra {
+        position: relative;
+        max-width: 1250px;
+        padding: 0 30 px;
+        height: 50px;
+        /* line-height: 50px; */
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
 
-            padding: 25px 20px;
-            display: flex;
-            width: 100%;
-            justify-content: space-between;
-        }
+    .containershra .nav-link {
+        display: inline-flex;
+    }
 
-        .content.row {
-            width: calc(25%-30px);
-            /* line-height: 45px; */
-        }
+    .nav-link li {
+        list-style: none;
+        /* color:white; */
 
-        .content.row img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
+    }
 
-        .content.row header {
-            color: black;
-            font-size: 20px;
-            font-weight: 600;
+    .nav-link #heading>a {
+        color: antiquewhite;
+    }
 
-        }
+    .nav-link li a {
+        text-decoration: none;
+        /* color: black; */
+        font-size: 14px;
+        font-weight: 600;
+        padding: 10px 15px;
+        color: black;
 
-        .content.row.megalink {
-            border-left: 1px solid rgb(255, 255, 255, 0.09);
-            margin-left: -40px;
-            
-        }
+    }
 
-        .row.megalink li {
-            padding: 0 20px;
-            color: black;
+    .mega-links.white {
+        color: black;
+    }
 
-
-        }
-
-        .row.megalink li a {
-            padding: 0 20px;
-            color: black;
-            font-size: 17px;
-            display: block;
+    .megabox {
+        position: absolute;
+        top: 100px;
+        width: 100%;
+        /* width: 180px; */
+        /* line-height: 45px; */
+        left: 0;
+        opacity: 0;
+        visibility: hidden;
 
 
-        }
+    }
 
-        .nav-link li:hover .megabox {
-            opacity: 1;
-            visibility: visible;
-            transition: all 0.3s ease;
-            top: 65px;
-        }
+    .megabox .content {
+        background-color: white;
 
-        #wish>img {
-            height: 80%;
-            width: 40px;
-        }
+        padding: 25px 20px;
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
 
-        #cart>img {
-            height: 80%;
-            width: 40px;
-        }
+    .content.row {
+        width: calc(25%-30px);
+        /* line-height: 45px; */
+    }
 
-        #signin>img {
-            /* padding-top: 15px; */
-            /* border:1px solid red; */
-            height: 80%;
-            width: 40px;
-        }
+    .content.row img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
 
-        #signin {
-            font-size: 20px;
-        }
-        
-        
-    </style>
+    .content.row header {
+        color: black;
+        font-size: 20px;
+        font-weight: 600;
+
+    }
+
+    .content.row.megalink {
+        border-left: 1px solid rgb(255, 255, 255, 0.09);
+        margin-left: -40px;
+
+    }
+
+    .row.megalink li {
+        padding: 0 20px;
+        color: black;
+
+
+    }
+
+    .row.megalink li a {
+        padding: 0 20px;
+        color: black;
+        font-size: 17px;
+        display: block;
+
+
+    }
+
+    .nav-link li:hover .megabox {
+        opacity: 1;
+        visibility: visible;
+        transition: all 0.3s ease;
+        top: 65px;
+    }
+
+    #wish>img {
+        height: 80%;
+        width: 40px;
+    }
+
+    #cart>img {
+        height: 80%;
+        width: 40px;
+    }
+
+    #signin>img {
+        /* padding-top: 15px; */
+        /* border:1px solid red; */
+        height: 80%;
+        width: 40px;
+    }
+
+    #signin {
+        font-size: 20px;
+    }
+</style>
+
 <body>
-    
-    
 
-        <div id="container">
-    
+    <div id="ship"><strong>Enjoy free shipping on all orders with code FREESHIP. See terms ▸</div>
+
+
+    <div id="topdiv">
+        <div onclick="window.location.href='index.html'" id="brand"><img onclick=""
+                src="https://www.sephora.com/img/ufe/logo.svg" alt=""></div>
+        <div id="searchdiv" style="width:350px"><input id="searc" type="search" placeholder="Search" name="keyword"
+                class="search"></div>
+        <div id="subtop" style="width:450px">
+            <div style="padding-top: 8px;"><img src="https://www.sephora.com/img/ufe/icons/stores.svg" alt="">Store and
+                Services</div>
+            <div onclick="window.location.href='s&l.html'" id="signin"><img onclick=""
+                    src="https://www.sephora.com/img/ufe/icons/me-active.svg" alt="">Sign in</div>
+            <div onclick="window.location.href='wishlist.html'" id="wish"><img onclick=""
+                    src="https://www.sephora.com/img/ufe/loveless.svg" alt=""></div>
+            <div onclick="window.location.href='cart.html'" id="cart"><img onclick=""
+                    src="https://media.gettyimages.com/vectors/retail-store-flat-doodle-icon-design-vector-id1191418637?s=2048x2048"
+                    alt=""></div>
         </div>
-        
+
+    </div>
+
+
+    <!-- navbar starts>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
+    <nav>
+        <div class="containershra">
+            <ul class="nav-link">
+                <li id="heading"><a href="#">New</a>
+                    <div class="megabox">
+                        <div class="content">
+
+                            <div class="row">
+                                <ul class="mega-links">
+                                    <li class="white"><a href="#">All New</a></li>
+                                    <li class="white"><a href="#">Just Dropped</a></li>
+                                    <li class="white"><a href="#">New Makeup</a></li>
+                                    <li class="white"><a href="#">New Skincare</a></li>
+                                    <li class="white"><a href="#">New Haircare</a></li>
+                                    <li class="white"><a href="#">New Fragrance</a></li>
+                                    <li class="white"><a href="#">New Bath & Body</a></li>
+                                    <li class="white"><a href="#">New Tools & brushes</a></li>
+
+
+                                </ul>
+
+
+                            </div>
+
+                            <div class="row">
+                                <ul class="mega-links">
+                                    <li><a href="#">The Next Big Thing</a></li>
+                                    <li><a href="#">Bestsellers</a></li>
+                                    <li><a href="#">Allure Best Of Beauty</a></li>
+                                    <li><a href="#">Quizzes & Buying Guides</a></li>
+                                    <li><a href="#">Clean Beauty guide</a></li>
+
+                                </ul>
+
+
+                            </div>
+
+                            <div class="row">
+                                <img src="https://www.sephora.com/contentimages/meganav/large/2022-feb-lip-story-site-desktop-global-navigation-button-us.jpg?imwidth=294"
+                                    alt="">
+                            </div>
+
+                            <div class="row">
+                                <img src="https://www.sephora.com/contentimages/meganav/large/2022-02-01-feb-hair-mbc-site-desktop-global-navigation-button.jpg?imwidth=294"
+                                    alt="">
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li id="heading">
+                    <a href="#">Brands</a>
+                    <!-- <div class="logo">Brands A-Z</div>
+                      <div class="logo">SEPHORA COLLECTION</div>
+                      <div class="logo">New Brands</div> -->
+                    <div class="megabox">
+                        <div class="content">
+
+                            <div class="row">
+                                <ul class="mega-links">
+                                    <li class="white"><a href="#">Brands A-Z</a></li>
+                                    <li class="white"><a href="#">Sephora Collection</a></li>
+                                    <li class="white"><a href="#">Caliray</a></li>
+                                    <li class="white"><a href="#">Crown Affair</a></li>
+                                    <li class="white"><a href="#">Chris Collins</a></li>
+                                    <li class="white"><a href="#">Rose Inc.</a></li>
+
+
+
+                                </ul>
+
+
+                            </div>
+
+                            <div class="row">
+                                <ul class="mega-links">
+                                    <li><a href="#">Milk Makeup</a></li>
+                                    <li><a href="#">Biossance</a></li>
+                                    <li><a href="#">Kayali</a></li>
+
+                                </ul>
+
+
+                            </div>
+
+
+                            <div class="row">
+                                <ul class="mega-links">
+                                    <li><a href="#">Afforable Brands</a></li>
+                                    <li><a href="#">Sephora Collection</a></li>
+                                    <li><a href="#">The Ordinary</a></li>
+                                    <li><a href="#">The Inkey List</a></li>
+                                    <li><a href="#">Verb</a></li>
+
+                                </ul>
+
+
+                            </div>
+
+                            <div class="row">
+                                <img src="https://www.sephora.com/contentimages/meganav/large/020522-BlackOwnedBrands-site-desktop-global-navigation-button-en-us.jpg?imwidth=294"
+                                    alt="">
+                            </div>
+
+
+                        </div>
+                    </div>
+                </li>
+
+
+                </li>
+                <li id="heading"><a href="#">Makeup</a>
+                    <div class="megabox">
+                        <div class="content">
+
+                            <div class="row">
+                                <ul class="mega-links">
+                                    <li class="white"><a href="#">Cheek</a></li>
+                                    <li class="white"><a href="#">Blush</a></li>
+                                    <li class="white"><a href="#">Bronzer</a></li>
+                                    <li class="white"><a href="#">Cheek Palettes</a></li>
+
+
+
+                                </ul>
+
+
+                            </div>
+
+                            <div class="row">
+                                <ul class="mega-links">
+                                    <li><a href="#">Lipstick</a></li>
+                                    <li><a href="#">Lip Gloss</a></li>
+                                    <li><a href="#">Lip Balm & Treatement</a></li>
+                                    <li><a href="#">Liquid Lipstick</a></li>
+                                    <li><a href="#">Lip Sets</a></li>
+
+                                </ul>
+
+
+                            </div>
+
+
+                            <div class="row">
+                                <ul class="mega-links">
+                                    <li><a href="#">Eye Platees</a></li>
+                                    <li><a href="#">Mascara</a></li>
+                                    <li><a href="#">Eyeliner</a></li>
+                                    <li><a href="#">Eyebrow</a></li>
+                                    <li><a href="#">Eye Sets</a></li>
+
+                                </ul>
+
+
+                            </div>
+
+                            <div class="row">
+                                <ul class="mega-links">
+                                    <li><a href="#">New</a></li>
+                                    <li><a href="#">Bestsellers</a></li>
+                                    <li><a href="#">Clean Fragrance</a></li>
+                                    <li><a href="#">Vegan Fragrance</a></li>
+                                    <li><a href="#">Mini size</a></li>
+
+                                </ul>
+
+
+                            </div>
+
+
+                        </div>
+                    </div>
+                </li>
+                </li>
+                <li id="heading"><a href="#">Skincare</a>
+                    <div class="megabox">
+                        <div class="content">
+
+                            <div class="row">
+                                <ul class="mega-links">
+                                    <li class="white"><a href="#">All Skincare</a></li>
+                                    <li class="white"><a href="#">Moisturizers</a></li>
+                                    <li class="white"><a href="#">Night Creams</a></li>
+                                    <li class="white"><a href="#">Face Oils</a></li>
+                                    <li class="white"><a href="#">Mists & Essence</a></li>
+                                    <li class="white"><a href="#">BB & CC Creams</a></li>
+
+
+
+                                </ul>
+
+
+                            </div>
+
+                            <div class="row">
+                                <ul class="mega-links">
+                                    <li><a href="#">Face Serums</a></li>
+                                    <li><a href="#">Blemish & Acne Treatement</a></li>
+                                    <li><a href="#">Facial Peels</a></li>
+                                    <li><a href="#">Face Mask</a></li>
+                                    <li><a href="#">Sheet Mask</a></li>
+                                    <li><a href="#">Eye Mask</a></li>
+
+                                </ul>
+
+
+                            </div>
+
+
+                            <div class="row">
+                                <ul class="mega-links">
+                                    <li><a href="#">New</a></li>
+                                    <li><a href="#">Bestsellers</a></li>
+                                    <li><a href="#">Clean Fragrance</a></li>
+                                    <li><a href="#">Vegan Fragrance</a></li>
+                                    <li><a href="#">Mini size</a></li>
+
+                                </ul>
+
+
+                            </div>
+
+
+                        </div>
+                    </div>
+                </li>
+                </li>
+                <li id="heading"><a href="#">Hair</a>
+                    <div class="megabox">
+                        <div class="content">
+
+                            <div class="row">
+                                <ul class="mega-links">
+                                    <li class="white"><a href="#">Hair Mask</a></li>
+                                    <li class="white"><a href="#">Hair Oil</a></li>
+                                    <li class="white"><a href="#">Hair Serums</a></li>
+                                    <li class="white"><a href="#">Scalp Treatement</a></li>
+                                    <li class="white"><a href="#">Hair Supplement</a></li>
+                                    <li class="white"><a href="#">Hair Thinning & Hair Loss</a></li>
+
+
+
+                                </ul>
+
+
+                            </div>
+
+                            <div class="row">
+                                <ul class="mega-links">
+                                    <li><a href="#">Styling Creams </a></li>
+                                    <li><a href="#">Dry Shampoo</a></li>
+                                    <li><a href="#">Hair Primers & Heat Protectants</a></li>
+                                    <li><a href="#">Hair Spray</a></li>
+                                    <li><a href="#">Hair Toners</a></li>
+
+                                </ul>
+
+
+                            </div>
+
+                            <div class="row">
+                                <ul class="mega-links">
+                                    <li><a href="#">Hair Dryers</a></li>
+                                    <li><a href="#">Hair Straighteners & flat Irons</a></li>
+                                    <li><a href="#">Curling Irons</a></li>
+                                    <li><a href="#">Brushes & Combs</a></li>
+                                    <li><a href="#">Accessories</a></li>
+
+                                </ul>
+
+
+                            </div>
+
+
+                            <div class="row">
+                                <ul class="mega-links">
+                                    <li><a href="#">Damaged Hair</a></li>
+                                    <li><a href="#">Dryness</a></li>
+                                    <li><a href="#">Frizz</a></li>
+                                    <li><a href="#">Scalp Care/a></li>
+                                    <li><a href="#">Volume</a></li>
+
+                                </ul>
+
+
+                            </div>
+
+
+                            <div class="row">
+                                <ul class="mega-links">
+                                    <li><a href="#">New</a></li>
+                                    <li><a href="#">Bestsellers</a></li>
+                                    <li><a href="#">Clean Fragrance</a></li>
+                                    <li><a href="#">Vegan Fragrance</a></li>
+                                    <li><a href="#">Mini size</a></li>
+
+                                </ul>
+
+
+                            </div>
+
+
+                        </div>
+                    </div>
+                </li>
+
+                </li>
+                <li id="heading"><a href="#">Fragrance</a>
+                    <div class="megabox">
+                        <div class="content">
+
+                            <div class="row">
+                                <ul class="mega-links">
+                                    <li class="white"><a href="#">All Fragrance</a></li>
+                                    <li class="white"><a href="#">Women</a></li>
+                                    <li class="white"><a href="#">Perfume</a></li>
+                                    <li class="white"><a href="#">Perfume Oils</a></li>
+                                    <li class="white"><a href="#">Rollerballs & Travel Size</a></li>
+                                    <li class="white"><a href="#">Body Mist & Hair Mist</a></li>
+
+
+
+                                </ul>
+
+
+                            </div>
+
+                            <div class="row">
+                                <ul class="mega-links">
+                                    <li><a href="#">Candles & Home Scents</a></li>
+                                    <li><a href="#">Candles</a></li>
+                                    <li><a href="#">Diffusers</a></li>
+                                    <li><a href="#">Floral</a></li>
+                                    <li><a href="#">Fresh</a></li>
+
+                                </ul>
+
+
+                            </div>
+
+
+                            <div class="row">
+                                <ul class="mega-links">
+                                    <li><a href="#">New</a></li>
+                                    <li><a href="#">Bestsellers</a></li>
+                                    <li><a href="#">Clean Fragrance</a></li>
+                                    <li><a href="#">Vegan Fragrance</a></li>
+                                    <li><a href="#">Mini size</a></li>
+
+                                </ul>
+
+
+                            </div>
+
+
+                            <div class="row">
+                                <ul class="mega-links">
+                                    <li><a href="#">Help Me Choose</a></li>
+                                    <li><a href="#">Clean Fragrance Guide </a></li>
+                                    <li><a href="#">Fragrance Quiz</a></li>
+                                    <li><a href="#">Fragrance Notes Guide</a></li>
+                                    <li><a href="#">Best Afforable Fragrance</a></li>
+
+                                </ul>
+
+
+                            </div>
+
+
+                        </div>
+                    </div>
+                </li>
+
+                </li>
+                <li id="heading"><a href="#">Tools & Brushes</a>
+                    <div class="megabox">
+                        <div class="content">
+
+                            <div class="row">
+                                <ul class="mega-links">
+                                    <li class="white"><a href="#">All Tools & Brushes</a></li>
+                                    <li class="white"><a href="#">Sephora Collection</a></li>
+                                    <li class="white"><a href="#">Brushes & Applicators</a></li>
+                                    <li class="white"><a href="#">Brush Sets</a></li>
+                                    <li class="white"><a href="#">Face Brushes </a></li>
+                                    <li class="white"><a href="#">Lip Brushes</a></li>
+                                    <li class="white"><a href="#">Sponger & Applicators</a></li>
+                                    <li class="white"><a href="#">Brush Cleaner</a></li>
+
+
+                                </ul>
+
+
+                            </div>
+
+                            <div class="row">
+                                <ul class="mega-links">
+                                    <li><a href="#">Hair Tools</a></li>
+                                    <li><a href="#">Hair Dryers</a></li>
+                                    <li><a href="#">Straighteners & Flat Irons</a></li>
+                                    <li><a href="#">Curling Irons</a></li>
+                                    <li><a href="#">Accessories</a></li>
+
+                                </ul>
+
+
+                            </div>
+
+                            <div class="row">
+                                <ul class="mega-links">
+                                    <li><a href="#">Beauty Tools</a></li>
+                                    <li><a href="#">Anti Aging</a></li>
+                                    <li><a href="#">Teeth Whitening</a></li>
+                                    <li><a href="#">Hair Removal</a></li>
+                                    <li><a href="#">Eyelash Curlers</a></li>
+
+                                </ul>
+
+
+                            </div>
+
+                            <div class="row">
+                                <ul class="mega-links">
+                                    <li><a href="#">Makeup & Travel Cases</a></li>
+                                    <li><a href="#">Value & Gifts Sets</a></li>
+                                    <li><a href="#">New</a></li>
+                                    <li><a href="#">Bestsellers</a></li>
+                                    <li><a href="#">Allure Best of Beauty:Tools and Brushes</a></li>
+
+                                </ul>
+
+
+                            </div>
+
+                            <div class="row">
+                                <img src="https://www.sephora.com/contentimages/meganav/large/2020-07-29-pro-brushes-site-desktop-global-navigation-button.jpg?imwidth=294"
+                                    alt="">
+                            </div>
+
+
+                        </div>
+                    </div>
+                </li>
+
+                </li>
+                <li id="heading"><a href="#">Bath & Body</a>
+                    <div class="megabox">
+                        <div class="content">
+
+                            <div class="row">
+                                <ul class="mega-links">
+                                    <li class="white"><a href="#">All Bath & Body</a></li>
+                                    <li class="white"><a href="#">Bath & Shower</a></li>
+                                    <li class="white"><a href="#">Body Wash & Shower Gel</a></li>
+                                    <li class="white"><a href="#">Scrub & Exfoliants</a></li>
+                                    <li class="white"><a href="#">Bath Soaks & Bubble Bath</a></li>
+
+
+
+                                </ul>
+
+
+                            </div>
+
+                            <div class="row">
+                                <ul class="mega-links">
+                                    <li><a href="#">Body Care </a></li>
+                                    <li><a href="#">Intimate Care</a></li>
+                                    <li><a href="#">Hand Sanitizer & Hand soap</a></li>
+                                    <li><a href="#">Cellulite & Stretch Marks</a></li>
+                                    <li><a href="#">Value & Gift Sets</a></li>
+
+                                </ul>
+
+
+                            </div>
+
+                            <div class="row">
+                                <ul class="mega-links">
+                                    <li><a href="#">Candles & Home Scents</a></li>
+                                    <li><a href="#">Sunscreen</a></li>
+                                    <li><a href="#">Face Sunscreen</a></li>
+                                    <li><a href="#">Body Sunscreen</a></li>
+                                    <li><a href="#">Self Tanners</a></li>
+
+                                </ul>
+
+
+                            </div>
+
+                            <div class="row">
+                                <ul class="mega-links">
+                                    <li><a href="#">New</a></li>
+                                    <li><a href="#">Bestsellers</a></li>
+                                    <li><a href="#">Mini Size</a></li>
+                                    <li><a href="#">Value Size</a></li>
+                                    <li><a href="#">Sephora Collection</a></li>
+                                    <li><a href="#">Allure best of Beauty:Bath & Body</a></li>
+
+
+                                </ul>
+
+
+                            </div>
+
+                            <div class="row">
+                                <img src="https://www.sephora.com/contentimages/meganav/large/2020-9-14-site-desktop-global-navigation-button-banner-sol-de-janeiro.jpg?imwidth=294"
+                                    alt="">
+                            </div>
+
+
+                        </div>
+                    </div>
+                </li>
+
+                </li>
+                <li id="heading"><a href="#">Mini Size</a>
+                    <div class="megabox">
+                        <div class="content">
+
+                            <div class="row">
+                                <ul class="mega-links">
+                                    <li class="white"><a href="#">All Mini Size</a></li>
+
+                                    <li class="white"><a href="#">Makeup</a></li>
+                                    <li class="white"><a href="#">Skincare</a></li>
+                                    <li class="white"><a href="#">Haircare</a></li>
+                                    <li class="white"><a href="#">Fragrance</a></li>
+                                    <li class="white"><a href="#">Bath & Body</a></li>
+
+
+
+                                </ul>
+
+
+                            </div>
+
+                            <div class="row">
+                                <ul class="mega-links">
+                                    <li><a href="#">Value & Gift Sets</a></li>
+                                    <li><a href="#">$15 and Under</a></li>
+                                    <li><a href="#">$25 and Under </a></li>
+                                    <li><a href="#">Sephora Favorites</a></li>
+
+
+                                </ul>
+
+
+                            </div>
+
+                            <div class="row">
+                                <img src="https://www.sephora.com/contentimages/meganav/large/2020-07-29-site-global-navigation-button-evergreen-crossworld-minis.jpg?imwidth=294"
+                                    alt="">
+                            </div>
+
+                            <div class="row">
+                                <img src="https://www.sephora.com/contentimages/meganav/large/2020-12-23-site-dt-botnav-seph-coll-US.jpg?imwidth=294"
+                                    alt="">
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                </li>
+                <li id="heading"><a href="#">Gifts</a>
+                    <div class="megabox">
+                        <div class="content">
+
+                            <div class="row">
+                                <ul class="mega-links">
+                                    <li class="white"><a href="#">All Gifts</a></li>
+                                    <li class="white"><a href="#">Gift Cards</a></li>
+                                    <li class="white"><a href="#">Value & Gift Sets</a></li>
+                                    <li class="white"><a href="#">By Price</a></li>
+
+
+
+                                </ul>
+
+
+                            </div>
+
+                            <div class="row">
+                                <ul class="mega-links">
+                                    <li><a href="#">By Category</a></li>
+                                    <li><a href="#">Makeup</a></li>
+                                    <li><a href="#">Skincare</a></li>
+                                    <li><a href="#">Hair</a></li>
+                                    <li><a href="#">Fragrance</a></li>
+                                    <li><a href="#">Candles & Home scents</a></li>
+                                    <li><a href="#">Tools</a></li>
+                                    <li><a href="#">Brush Sets & Accessories</a></li>
+                                    <li><a href="#">Bath & Body</a></li>
+
+
+                                </ul>
+                                <div class="row">
+                                    <ul class="mega-links">
+                                        <li><a href="#">By Recipient</a></li>
+                                        <li><a href="#">For Her</a></li>
+                                        <li><a href="#">For Him</a></li>
+                                        <li><a href="#">For Teenagers</a></li>
+                                        <li><a href="#">For Them</a></li>
+
+
+                                    </ul>
+
+
+                                    <div class="row">
+                                        <ul class="mega-links">
+                                            <li><a href="#">Top Rated Gifts</a></li>
+                                            <li><a href="#">Mini Size</a></li>
+                                            <li><a href="#">Only at Sephora</a></li>
+                                            <li><a href="#">Luxury</a></li>
+
+
+                                        </ul>
+
+
+                                    </div>
+
+                                    <div class="row">
+                                        <img src="https://www.sephora.com/contentimages/meganav/large/2022-01-16-fragrance-q1-site-desktop-global-navigation-button-giftcards.jpg?imwidth=294"
+                                            alt="">
+                                    </div>
+
+
+                                </div>
+                            </div>
+                </li>
+
+                </li>
+                <li id="heading"><a href="#">Beauty Under 20$</a>
+                    <div class="megabox">
+                        <div class="content">
+
+                            <div class="row">
+                                <ul class="mega-links">
+                                    <li class="white"><a href="#">Makeup Under 20$</a></li>
+                                    <li class="white"><a href="#">Skincare Under 20$</a></li>
+                                    <li class="white"><a href="#">Hair Under 20$</a></li>
+                                    <li class="white"><a href="#">Fragrance Under 20$</a></li>
+                                    <li class="white"><a href="#">Tools & Body Under 20$</a></li>
+
+                                    <li class="white"><a href="#"> Bath & Body Under 20$</a></li>
+
+
+
+                                </ul>
+
+
+                            </div>
+
+                            <div class="row">
+                                <ul class="mega-links">
+                                    <li><a href="#">Sephora Collection Under 20$</a></li>
+                                    <li><a href="#">Makeup</a></li>
+                                    <li><a href="#">Skincare</a></li>
+                                    <li><a href="#">Hair</a></li>
+                                    <li><a href="#">Candles & Home Scents</a></li>
+                                    <li><a href="#">Tools & Brushes</a></li>
+                                    <li><a href="#">Bath & Body</a></li>
+                                    <li><a href="#">Vaule & Gift sets</a></li>
+                                    <li><a href="#">Clean beauty</a></li>
+
+                                </ul>
+
+
+                            </div>
+
+                            <div class="row">
+                                <img src="https://www.sephora.com/contentimages/meganav/large/2022-01-13-sc-bbd-mascara-site-desktop-global-navigation-button.jpg?imwidth=294"
+                                    alt="">
+                            </div>
+
+
+                        </div>
+                    </div>
+                </li>
+                </li>
+                <li id="heading"><a href="#">Sales & offer</a>
+                    <div class="megabox">
+                        <div class="content">
+
+                            <div class="row">
+                                <ul class="mega-links">
+                                    <li class="white"><a href="#">All Sale</a></li>
+                                    <li class="white"><a href="#">Makeup</a></li>
+                                    <li class="white"><a href="#">Skincare</a></li>
+
+                                    <li class="white"><a href="#"> Haircare</a></li>
+                                    <li class="white"><a href="#"> Fragrance</a></li>
+                                    <li class="white"><a href="#"> Bath & Body</a></li>
+                                    <li class="white"><a href="#">Tools & brushes</a></li>
+                                    <li class="white"><a href="#">Mini Size</a></li>
+
+
+                                </ul>
+
+
+                            </div>
+
+                            <div class="row">
+                                <ul class="mega-links">
+                                    <li><a href="#">Beauty Offers</a></li>
+
+
+                                </ul>
+
+
+                            </div>
+
+                            <div class="row">
+                                <img src="https://www.sephora.com/contentimages/meganav/large/slotting-sale-generic-site-desktop-global-navigation-button_copy-only.jpg?imwidth=294"
+                                    alt="">
+                            </div>
+
+                            <div class="row">
+                                <img src="https://www.sephora.com/contentimages/meganav/large/site-desktop-global-navigation-button-evergreen-beauty-offers-abundance.jpg?imwidth=294"
+                                    alt="">
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+
+
+    <div id="container">
+
+    </div>
+
     </div>
 </body>
+
 </html>
 <script>
-    var details=JSON.parse(localStorage.getItem("productDetails"));
+    var details = JSON.parse(localStorage.getItem("productDetails"));
     var cartArr = JSON.parse(localStorage.getItem("CartItems")) || [];
     showdetails(details);
 
 
-    function showdetails(details){
-        document.getElementById("container").innerHTML="";
+    function showdetails(details) {
+        document.getElementById("container").innerHTML = "";
 
-        details.map(function(el){
+        details.map(function (el) {
 
-            var div2=document.createElement("div2");
-            div2.setAttribute("id","imagebox");
-            
-            var image=document.createElement("img");
-            image.setAttribute("src",el.image);
+            var div2 = document.createElement("div2");
+            div2.setAttribute("id", "imagebox");
 
-            var div=document.createElement("div");
-            div.setAttribute("id","product");
+            var image = document.createElement("img");
+            image.setAttribute("src", el.image);
 
-            var brand=document.createElement("p");
-            brand.textContent=el.name;
-            brand.setAttribute("id","brand");
+            var div = document.createElement("div");
+            div.setAttribute("id", "product");
 
-            var name=document.createElement("p");
-            name.textContent=el.name2;
-            name.setAttribute("id","second");
+            var brand = document.createElement("p");
+            brand.textContent = el.name;
+            brand.setAttribute("id", "brand");
 
-            var price=document.createElement("p");
-            price.textContent=el.price;
-            price.setAttribute("id","price");
+            var name = document.createElement("p");
+            name.textContent = el.name2;
+            name.setAttribute("id", "second");
 
-            var about=document.createElement("p");
-            about.textContent=el.about;
-            about.setAttribute("id","about");
+            var price = document.createElement("p");
+            price.textContent = el.price;
+            price.setAttribute("id", "price");
+
+            var about = document.createElement("p");
+            about.textContent = el.about;
+            about.setAttribute("id", "about");
 
 
-            
+
             div3 = document.createElement("div")
             var btn = document.createElement("button");
-            btn.setAttribute("id","btn");
+            btn.setAttribute("id", "btn");
             btn.textContent = "Add To Basket";
             // btn.textContent="for Standard Shipping";
-            btn.addEventListener('click', function(){
-            addToCart(el)
+            btn.addEventListener('click', function () {
+                addToCart(el)
             })
 
             div2.append(image);
-            div.append(brand,name,price,about,btn);
-            document.getElementById("container").append(div2,div);
+            div.append(brand, name, price, about, btn);
+            document.getElementById("container").append(div2, div);
 
 
-            
+
         })
     }
 
-         function addToCart(el){
-         cartArr.push(el);
+    function addToCart(el) {
+        cartArr.push(el);
         console.log(el);
         localStorage.setItem("CartItems", JSON.stringify(cartArr));
-        window.location.href="cart.html";
+        window.location.href = "cart.html";
         // alert("Item added Successfully")
-        
+
     }
 
-   
+
 </script>
