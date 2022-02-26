@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #outerdiv{
+
+        border: 1px solid black;
+        height: 850px;
+        font-family: sans-serif;
+        background-color: black;
+     
+    }
+    #top{
+        height: 50px;
+        border: 1px solid green;
+        width: 100%;
+        background-color: rgb(204,204,204)
+
+    }
+    #bottom{
+        height: 600px;
+        /* border: 1px solid red; */
+        width: 100%;
+      
+    }
+  
+    #bottom>div{
+        display: flex;
+      
+    }
+    .one{
+        border: 1px solid green;
+        height: 100px;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .two{
+        border: 1px solid yellow;
+        height: 500px;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .one>div{
+        width: 200px;
+        height: 80px;
+        border: 1px solid blue;
+        display: flex;
+        justify-content: space-evenly;
+       
+    }
+
+    .two>div{
+        width: 200px;
+        height: 500px;
+        border: 1px solid blue;
+     
+    }
+
+    .two>div:last-child{
+        width: 350px;
+    }
+
+    .one>div:last-child{
+        width: 350px;
+    }
+    p{
+        font-size: 14px;
+        color: white;
+    }
+    .one>div>div{
+        border: 1px solid orange;
+        height: 60px;
+    }
+    .img{
+        width:50px ;
+    }
+    .text{
+        width :160px
+    }
+    .imgl{
+        width: 45px;
+    }
+    .textl{
+        width: 350;
+    }
+    #last{
+   
+    height: 200px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-around;
+
+    }
+    #last>div{
+        width: 640px;
+        height: 100px;
+        border: 1px sienna solid;
+    }
+    .P{
+        display: flex;
+        border: 1px solid black;
+      
+    }
+    .P>a{
+        margin-left: 2%;
+    }
+    .img>img{
+        width: 50px;
+        margin-top: 10px;
+
+    }
+    .imgl>img{
+        width: 50px;
+        margin-top: 10px;
+    }
+    h3{
+        color: white;
+    }
+    h1{
+        color: white;
+    }
+    #icons{
+       margin-left: 50%;
+    }
+    a{
+        color: white;
+        font-size: 14px;
+        padding-bottom: 3%;
+    }
+    .two>div>div{
+        padding-bottom: 10px;
+    }
+    .footer{
+        margin-left: 2%;
+    }
+    /* .imgicon>a{
+        width: 100%;
+    }
+  */
+  .feedback{
+      color: black;
+        text-align: center;
+  }
+  .region{
+      width: 30px;
+      padding-top: 4%;
+  }
+</style>
+
+<body>
+    <div id="outerdiv">
+        <div id="top">
+            <h3 class="feedback">Website feedback? Let us know </h3>
+        </div>  
+        <div id="bottom">
+            <div class="one">
+                <div>
+                    <div class="img">
+                        <img src="https://www.sephora.com/img/ufe/icons/find-store.svg" alt=""/>
+                    </div>
+                    <div class="text">
+                        <p>Find a store Choose Your Store</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="img">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQF8BSMLDHCMMuUPYe-UiJpZW2DxtlIhYRZtAJywvy4JMJmOZzKT3XoNzJlR4qvfc-gRsg&usqp=CAU" alt=""/>
+                    </div>
+                    <div class="text">
+                        <p>Live Beauty Help Chat is Available</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="img">
+                        <img src="https://www.sephora.com/img/ufe/icons/call.svg" alt=""/>
+                    </div>
+                    <div class="text">
+                        <p>1-877-737-4672 <br>TTY:1-888-866-9845</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="img">
+                        <img src="https://www.sephora.com/img/ufe/icons/app.svg" alt=""/>
+                    </div>
+                    <div class="text">
+                        <p>Get the App <br> Text "APP" to 36681<p>
+                    </div>
+                </div>
+                <div>
+                    <div class="imgl">
+                        <img src="https://www.sephora.com/img/ufe/icons/cc-outline-ko.svg" alt=""/>
+                    </div>
+                    <div class="textl">
+                        <p>Sephora Credit Card Program <br> Want 25% off your Sephora purchase?DETAILS</p> 
+                    </div>
+                </div>
+            </div>
+            <div class="two">
+                <div>
+                    <h3>About Sephora</h3>
+                    <div>
+                         <a href="https://www.sephora.com/beauty/about-us">About Sephora</a>
+                   </div>
+                   <div>
+                        <a href="https://www.sephoranewsroom.com/">Newsroom</a>
+                    </div>
+                    <div>
+                        <a href="https://jobs.sephora.com/USA">Careers</a>
+                    </div>
+                    <div>
+                        <a href="https://www.sephorastands.com/">Sephora Social Impact</a>
+                    </div>
+                    <div>
+                        <a href="https://www.sephora.com/beauty/supply-chain-transparency">Supply Chain Transparency</a>
+                    </div>
+                    <div>
+                        <a href="https://www.sephora.com/beauty/affiliates">Affiliates</a>
+                    </div>
+                    <div>
+                        <a href="https://www.sephora-events.com/">Sephora Events</a>
+                    </div>
+                   <div>
+                        <a href="https://www.sephora.com/beauty/giftcards">Gift Cards</a>
+                   </div>
+                   <div>
+                        <a href="https://www.sephora.com/beauty/international-websites">Sephora Events</a>
+                    </div>
+                    <div>
+                        <a href="https://www.sephora.com/beauty/diversity-and-inclusion">Diversity and Inclusion</a>
+                    </div>
+                    <div>
+                        <a href="https://www.sephora.com/beauty/instagram-checkout">Checkout on Instagram</a>
+                    </div>
+                        <a href="https://sephoraaccelerate.com/">Sephora Accelerate</a>
+                    <div>
+                        <a href="https://www.sephora.com/beauty/vulnerability-disclosure-program">Report a Vulnerability</a>
+                    </div>
+                </div>
+                <div>
+                    <h3>My Sephora</h3>
+
+              <div>
+                  <a href="https://www.sephora.com/beauty/about-us">Beauty Insider
+                      
+                  </a>
+              </div>
+              <div>
+                  <a href="https://www.sephora.com/creditcard">Sephora Credit Card
+                    
+                  </a>
+              </div>
+              <div>
+                  <a href="https://www.sephora.com/profile/me">Community Profile
+                      
+                  </a>
+              </div>
+              <div>
+                  <a href="https://www.sephora.com/beauty/order-status">Order Status
+                     
+                  </a>
+              </div>
+              <div>
+                  <a href="https://www.sephora.com/purchase-history">Purchase History
+                     
+                  </a>
+              </div>
+              <div>
+                  <a href="https://www.sephora.com/profile/MyAccount">Account Settings
+                      
+                  </a>
+              </div>
+              <div>
+                  <a href="https://www.sephora.com/in-store-services">Beauty Advisor Recommendations
+                     
+                  </a>
+              </div>
+              <div>
+                  <a href="https://www.sephora.com/beauty/beauty-offers">Beauty Offers
+                     
+                  </a>
+              </div>
+              <div>
+                  <a href="https://www.sephora.com/beauty/best-beauty-products">Quizzes & Buying Guides
+                      
+                  </a>
+              </div>
+              <div>
+                  <a href="https://www.sephora.com/rewards">Rewards Bazaar
+                     
+                  </a>
+              </div>
+              <div>
+                  <a href="https://www.sephora.com/shopping-list">Loves
+                    
+                  </a>
+              </div>
+              <div>
+                  <a href="https://www.sephora.com/happening/home">Book a Reservation
+                      
+                  </a>
+              </div>
+                   
+                </div>
+                <div>
+                    <h3>Help</h3>
+                    <div>
+                        <a href="https://www.sephora.com/beauty/customer-service">Customer Service
+                           
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.sephora.com/beauty/returns-exchanges">Returns & Exchanges
+                          
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.sephora.com/beauty/pick-up-delivery-options">Delivery and Pickup Options
+                            
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.sephora.com/beauty/shipping-information">Shipping
+                           
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.sephora.com/beauty/billing">Billing
+                           
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.sephora.com/beauty/international-shipments">International Shipments
+                           
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.sephora.com/beauty/beauty-services-faq">Beauty Services FAQ
+                          
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.sephora.com/beauty/sephora-at-kohls-faq">Sephora at Kohl's
+                          
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.sephora.com/beauty/jcpenney">Sephora Inside JCPenney
+                          
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.sephora.com/happening/stores/sephora-near-me">Store Location
+                           
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.sephora.com/beauty/order-online">Online Ordering
+                           
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.sephora.com/beauty/flexible-payments-klarna">Klama
+                          
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.sephora.com/beauty/accessibility">Accessibility
+                            
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://community.sephora.com/t5/Customer-Support/COVID-19-UPDATE-3-31-20/td-p/5250306">Steps We're Taking to Address COVID-19
+                           
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h3>Region &7 Language</h3>
+
+
+                    <div > 
+                        <img class="region" src="https://www.sephora.com/img/ufe/flags/us.svg"/>
+                        <a href="">United state-English
+                          
+                        </a>
+                    </div>
+                    <div>
+                        <img class="region" src="https://www.sephora.com/img/ufe/flags/ca.svg"/>
+                        <a href="">Canada-English
+                       
+                        </a>
+                    </div>
+                    <div>
+                        <img class="region" src="https://www.sephora.com/img/ufe/flags/ca.svg"/>
+                        <a href="">Canada-Francais
+               
+                        </a>
+                    </div>
+                   
+                </div>
+                <div>
+                    <h1>We Belong to Something Beautiful</h1>
+                </div>
+            </div>
+        </div>
+        <div id="last">
+
+            <div>
+                <div>
+                    <p class="footer">2022 Sephora USA, Inc.All rights reserved.</p>
+                </div>
+                <div class="P">
+
+                    <a href="https://www.sephora.com/beauty/privacy-policy">Privacy Policy</a>
+                    <a href="https://www.sephora.com/terms-of-use">Terms of Use</a>
+                    <a href="https://www.sephora.com/beauty/accessibility">Accessibility</a>
+                    <a href="https://www.sephora.com/sitemap/departments/">Sitemap</a>
+                </div>
+            </div>
+            <div class="imgicon" >
+                <a href="https://www.instagram.com/sephora/">
+                <img id="icons" src="https://www.sephora.com/img/ufe/icons/instagram-ko.svg" alt=""/>
+                </a>
+
+                <a href="https://www.facebook.com/sephora">
+                <img src="https://www.sephora.com/img/ufe/icons/facebook-ko.svg" alt=""/>
+                </a>
+
+                <a href="https://twitter.com/sephora">
+                <img src="https://www.sephora.com/img/ufe/icons/twitter-ko.svg" alt=""/>
+                </a>
+
+                <a href="https://www.youtube.com/user/sephora/tutorials">
+                <img src="https://www.sephora.com/img/ufe/icons/youtube-ko.svg" alt=""/>
+                </a>
+
+                <a href="https://www.pinterest.com/sephora/">
+                <img src="https://www.sephora.com/img/ufe/icons/pinterest-ko.svg" alt=""/>
+                </a>
+
+                <a href="https://www.snapchat.com/add/sephora">
+                <img src="https://www.sephora.com/img/ufe/icons/snapchat-ko.svg" alt=""/>
+                </a>
+                
+                <a href="https://www.tiktok.com/@sephora">
+                <img src="https://www.sephora.com/img/ufe/icons/tiktok-ko.svg" alt=""/>
+                </a>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
+
