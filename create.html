@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+
+        * body{
+            font-family: sans-serif;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            width: 550px;
+            margin: auto;
+            margin-top: 4%;
+        }
+    
+      
+        #form>input{
+            margin-top: 3%;
+            display: grid;
+            justify-content: space-around;
+            height: 30px;
+            font-size: 20px;
+            width: 500px;
+            border: 1px solid rgb(224, 217, 217);
+           
+        }
+        #form>:last-child{
+            width: 250px;
+            height: 40px;
+            font-size: 20px;
+            border-radius: 50px;
+            background-color: black;
+            color: rgb(238, 232, 232);
+        }
+        
+        #one{
+            width: 500px;
+        
+        }
+        #one>p:first-child{
+            text-align: center;
+            border: 1px solid rgb(224, 217, 217);
+            height: 40px;
+            padding-top: 2%;
+            font-weight: bold;
+            font-size: 25px;
+        }
+    
+        #p{
+            font-size: 17px;
+            font-style: italic;
+            
+        }
+        #h{
+            /* font-style: italic; */
+            font-family:cursive ;
+        }  
+        #main{
+            width: 510px;
+            justify-content: space-around;
+            padding-top: 2%;
+            margin: auto;
+            height: 550px;
+        }
+
+    </style>
+    
+</head>
+<body>
+   
+    <div id = "main">
+    <div id="one">
+        <p>Create an Account</p>
+    <h1 id="h">Beauty INSIDER<h1>
+    <p id="p">Join the Beauty Insider loyalty program. Earn points, redeem <br> rewards, and more.</p>
+    </div>
+    <form id ="form"> 
+    <!-- <div>
+    <input id = "fname" type = "text" placeholder = "Enter user name"/>
+    <input id = "lname" type = "text" placeholder = "Enter user name"/>
+    </div> -->
+    <input id = "name" type = "text" placeholder = "User name" required/>
+
+    <input id = "email" type = "text" placeholder = "Email address" required/>
+   
+    <input  id = "pass" type = "password" placeholder = "Password (6 to 12 characters" required/>
+    <input  id = "phone" type = "number" placeholder = " Phone number(optional)" required/>
+    <input id = "zip" type = "number" placeholder = "ZIP Code(to hear about store events near you" required/>
+
+    <input type = "submit" value="Join Now"/>
+    </form> 
+</div>
+
+
+</body>
+</html>
+
+<script>
+
+    document.querySelector("#form").addEventListener("submit",formsub)
+
+    var arr = JSON.parse(localStorage.getItem("signup")) ||[];
+    console.log(arr)
+
+        function formsub(){
+
+        event.preventDefault();
+
+                var obj = {
+
+                    name:document.querySelector("#name").value,
+                    // fname:document.querySelector("#fname").value,
+                    // lname:document.querySelector("#lname").value,
+                     email:document.querySelector("#email").value,
+                     pass:document.querySelector("#pass").value,
+                     phone:document.querySelector("#phone").value,
+                     zip:document.querySelector("#zip").value
+                };
+                arr.push(obj);
+                // console.log(obj)
+
+                localStorage.setItem("signup",JSON.stringify(arr));
+
+                document
+                .querySelector("form>input:last-child")
+               
+
+                window.location.href = "sign.html"
+                
+                }; 
+
+</script>
