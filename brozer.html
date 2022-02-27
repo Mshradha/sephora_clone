@@ -514,7 +514,7 @@ padding-top: 4%;
         <div id="topdiv">
             <div onclick="window.location.href='index.html'" id="brand"><img onclick=""
                     src="https://www.sephora.com/img/ufe/logo.svg" alt=""></div>
-            <div id="searchdiv" style="width:350px"><input id="searc" type="search" placeholder="Search" name="keyword"
+            <div id="searchdiv" style="width:350px"><input id="searchbar" onkeyup="search()" placeholder="Search" name="keyword"
                     class="search"></div>
             <div id="subtop" style="width:450px">
                 <div style="padding-top: 8px;"><img src="https://www.sephora.com/img/ufe/icons/stores.svg" alt="">Store and
@@ -1655,7 +1655,8 @@ padding-top: 4%;
 </html>
 <script>
     var bronzerArr=JSON.parse(localStorage.getItem("broArr"));
-    var productArr=[] ;
+    var productArr=  [] ;
+    
     showdata(bronzerArr);
 
 
@@ -1734,10 +1735,25 @@ padding-top: 4%;
 
         function showProduct(el){
             productArr.push(el);
+            el.qty = 1;
             localStorage.setItem("productDetails", JSON.stringify(productArr));
             console.log(productArr)
             window.location.href="details.html"
         }
 
     }
+
+
+    function search(){
+    var searchText = document.querySelector("#searchbar").value
+     console.log(searchText)
+    var filterdata =    bronzerArr.filter(function(item){
+        return item.name.includes(searchText);
+
+    })
+    console.log(filterdata)
+    showdata(filterdata)
+
+}
+
 </script>
