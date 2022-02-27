@@ -143,6 +143,7 @@ var innerDiv = document.createElement("div")
 
 var price = document.createElement("p")
 price.innerText = el.price+" "+"-"+" "+el.qty
+console.log(price)
 
 innerDiv.append(price)
 innerDiv.setAttribute("class","priceDiv")
@@ -177,20 +178,21 @@ document.querySelector("#container").append(mainDiv,line)
 }
 
 
-// console.log(cartArr)
+console.log(cartArr)
 
 function ShowTotal(){
 
 var total = cartArr.reduce(function (acc,el){
-
+   
     return acc+(el.price * el.qty);
+
 
     // acc = acc+elem.price
 
     // console.log(acc)
 },0);
 
-
+console.log(total)
 document.getElementById("total").innerText = total;
 }
 

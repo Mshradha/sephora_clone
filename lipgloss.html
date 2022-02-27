@@ -1736,6 +1736,7 @@ padding-top: 4%;
         
         function showProduct(el){
             productArr.push(el);
+            el.qty = 1;
             localStorage.setItem("productDetails", JSON.stringify(productArr));
             console.log(productArr)
             window.location.href="details.html"
