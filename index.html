@@ -383,176 +383,149 @@ border:1px solid red
 
 
         /* footerstart>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+#outerdiv{
 
-        #outerdiv {
+/* border: 1px solid black; */
+height: 850px;
+font-family: sans-serif;
+background-color: black;
 
-            /* border: 1px solid black; */
-            height: 850px;
-            font-family: sans-serif;
-            background-color: black;
+}
+#top{
+height: 50px;
+/* border: 1px solid green; */
+width: 100%;
+background-color: rgb(204,204,204)
 
-        }
+}
+#bottom{
+height: 600px;
+/* border: 1px solid red; */
+width: 100%;
 
-        #top {
-            height: 50px;
-            /* border: 1px solid green; */
-            width: 100%;
-            background-color: rgb(204, 204, 204)
-        }
+}
 
-        #bottom {
-            height: 600px;
-            /* border: 1px solid red; */
-            width: 100%;
+#bottom>div{
+display: flex;
 
-        }
+}
+.one{
+/* border: 1px solid green; */
+height: 100px;
+justify-content: space-evenly;
+align-items: center;
+}
+.two{
+/* border: 1px solid yellow; */
+height: 500px;
+justify-content: space-evenly;
+align-items: center;
+}
+.one>div{
+width: 200px;
+height: 80px;
+/* border: 1px solid blue; */
+display: flex;
+justify-content: space-evenly;
 
-        #bottom>div {
-            display: flex;
+}
 
-        }
+.two>div{
+width: 200px;
+height: 500px;
+/* border: 1px solid blue; */
 
-        .one {
-            /* border: 1px solid green; */
-            height: 100px;
-            justify-content: space-evenly;
-            align-items: center;
-        }
+}
 
-        .two {
-            /* border: 1px solid yellow; */
-            height: 500px;
-            justify-content: space-evenly;
-            align-items: center;
-        }
+.two>div:last-child{
+width: 350px;
+}
 
-        .one>div {
-            width: 200px;
-            height: 80px;
-            /* border: 1px solid blue; */
-            display: flex;
-            justify-content: space-evenly;
+.one>div:last-child{
+width: 350px;
+}
+p{
+font-size: 14px;
+color: white;
+}
+.one>div>div{
+/* border: 1px solid orange; */
+height: 60px;
+}
+.img{
+width:50px ;
+}
+.text{
+width :160px
+}
+.imgl{
+width: 45px;
+}
+.textl{
+width: 350;
+}
+#last{
 
-        }
+height: 200px;
+border: 1px solid black;
+display: flex;
+justify-content: space-around;
 
-        .two>div {
-            width: 200px;
-            height: 500px;
-            /* border: 1px solid blue; */
+}
+#last>div{
+width: 640px;
+height: 100px;
+/* border: 1px sienna solid; */
+}
+.P{
+display: flex;
+/* border: 1px solid black; */
 
-        }
+}
+.P>a{
+margin-left: 2%;
+}
+.img>img{
+width: 50px;
+margin-top: 10px;
 
-        .two>div:last-child {
-            width: 350px;
-        }
-
-        .one>div:last-child {
-            width: 350px;
-        }
-
-        p {
-            font-size: 14px;
-            color: white;
-            text-align: left;
-            line-height: 18px;
-        }
-
-        .one>div>div {
-            /* border: 1px solid orange; */
-            height: 60px;
-        }
-
-        .img {
-            width: 50px;
-        }
-
-        .text {
-            width: 160px
-        }
-
-        .imgl {
-            width: 45px;
-        }
-
-        .textl {
-            width: 350;
-        }
-
-        #last {
-
-            height: 200px;
-            border: 1px solid black;
-            display: flex;
-            justify-content: space-around;
-
-        }
-
-        #last>div {
-            width: 640px;
-            height: 100px;
-            /* border: 1px sienna solid; */
-        }
-
-        .P {
-            display: flex;
-            border: 1px solid black;
-
-        }
-
-        .P>a {
-            margin-left: 2%;
-        }
-
-        .img>img {
-            width: 50px;
-            margin-top: 10px;
-
-        }
-
-        .imgl>img {
-            width: 50px;
-            margin-top: 10px;
-        }
-
-        h3 {
-            color: white;
-        }
-
-        h1 {
-            color: white;
-        }
-
-        #icons {
-            margin-left: 50%;
-        }
-
-        a {
-            color: white;
-            font-size: 14px;
-            padding-bottom: 3%;
-        }
-
-        .two>div>div {
-            padding-bottom: 10px;
-        }
-
-        .footer {
-            margin-left: 2%;
-        }
-
-        /* .imgicon>a{
+}
+.imgl>img{
+width: 50px;
+margin-top: 10px;
+}
+h3{
+color: white;
+}
+h1{
+color: white;
+}
+#icons{
+margin-left: 50%;
+}
+a{
+color: white;
+font-size: 14px;
+padding-bottom: 3%;
+}
+.two>div>div{
+padding-bottom: 10px;
+}
+.footer{
+margin-left: 2%;
+}
+/* .imgicon>a{
 width: 100%;
 }
 */
-        .feedback {
-            color: black;
-            text-align: center;
-        }
-
-        .region {
-            width: 30px;
-            padding-top: 4%;
-        }
+.feedback{
+color: black;
+text-align: center;
+}
+.region{
+width: 30px;
+padding-top: 4%;
+}
     </style>
 </head>
 
@@ -591,10 +564,10 @@ width: 100%;
 
                             <div class="row">
                                 <ul class="mega-links">
-                                    <li class="white"><a href="#">All New</a></li>
+                                    <li class="white"><a href="brozer.html">All New</a></li>
                                     <li class="white"><a href="#">Just Dropped</a></li>
                                     <li class="white"><a href="#">New Makeup</a></li>
-                                    <li class="white"><a href="#">New Skincare</a></li>
+                                    <li class="white"><a href="skincare.html">New Skincare</a></li>
                                     <li class="white"><a href="#">New Haircare</a></li>
                                     <li class="white"><a href="#">New Fragrance</a></li>
                                     <li class="white"><a href="#">New Bath & Body</a></li>
@@ -643,8 +616,8 @@ width: 100%;
                                 <ul class="mega-links">
                                     <li class="white"><a href="#">Brands A-Z</a></li>
                                     <li class="white"><a href="#">Sephora Collection</a></li>
-                                    <li class="white"><a href="#">Caliray</a></li>
-                                    <li class="white"><a href="#">Crown Affair</a></li>
+                                    <li class="white"><a href="cailray.html">Caliray</a></li>
+                                    <li class="white"><a href="crown.html">Crown Affair</a></li>
                                     <li class="white"><a href="#">Chris Collins</a></li>
                                     <li class="white"><a href="#">Rose Inc.</a></li>
 
@@ -698,9 +671,9 @@ width: 100%;
 
                             <div class="row">
                                 <ul class="mega-links">
-                                    <li class="white"><a href="#">Cheek</a></li>
+                                    <li class="white"><a href="cheek.html">Cheek</a></li>
                                     <li class="white"><a href="#">Blush</a></li>
-                                    <li class="white"><a href="#">Bronzer</a></li>
+                                    <li class="white"><a href="brozer.html">Bronzer</a></li>
                                     <li class="white"><a href="#">Cheek Palettes</a></li>
 
 
@@ -712,8 +685,8 @@ width: 100%;
 
                             <div class="row">
                                 <ul class="mega-links">
-                                    <li><a href="#">Lipstick</a></li>
-                                    <li><a href="#">Lip Gloss</a></li>
+                                    <li><a href="lipgloss.html">Lipstick</a></li>
+                                    <li><a href="lips.html">Lip Gloss</a></li>
                                     <li><a href="#">Lip Balm & Treatement</a></li>
                                     <li><a href="#">Liquid Lipstick</a></li>
                                     <li><a href="#">Lip Sets</a></li>
@@ -726,9 +699,9 @@ width: 100%;
 
                             <div class="row">
                                 <ul class="mega-links">
-                                    <li><a href="#">Eye Platees</a></li>
-                                    <li><a href="#">Mascara</a></li>
-                                    <li><a href="#">Eyeliner</a></li>
+                                   
+                                    <li><a href="maskara.html">Mascara</a></li>
+                                    <li><a href="eyeliner.html">Eyeliner</a></li>
                                     <li><a href="#">Eyebrow</a></li>
                                     <li><a href="#">Eye Sets</a></li>
 
@@ -761,10 +734,11 @@ width: 100%;
 
                             <div class="row">
                                 <ul class="mega-links">
-                                    <li class="white"><a href="#">All Skincare</a></li>
+                                    <li class="white"><a href="skincare.html">All Skincare</a></li>
+                                    <li class="white"><a href="faceoil.html">Face Oils</a></li>
                                     <li class="white"><a href="#">Moisturizers</a></li>
                                     <li class="white"><a href="#">Night Creams</a></li>
-                                    <li class="white"><a href="#">Face Oils</a></li>
+                                    
                                     <li class="white"><a href="#">Mists & Essence</a></li>
                                     <li class="white"><a href="#">BB & CC Creams</a></li>
 
@@ -1538,7 +1512,7 @@ width: 100%;
         <div onclick="window.location.href='crown.html'"><img
                 src="https://www.sephora.com/contentimages/homepage/022222/Homepage/DesktopMweb/2022-02-22-hp-bot-nav-sc-sku-launches-good-skincare-desktop-us-slice.jpeg?imwidth=221"
                 alt=""></div>
-        <div onclick="window.location.href='cailary.html'"><img
+        <div onclick="window.location.href='cailray.html'"><img
                 src="https://www.sephora.com/contentimages/homepage/100218/Homepage/DesktopMweb/2018-10-02-hp-botnav-oct-lip-quiz-us-ca-d-slice.jpg?imwidth=221"
                 alt=""></div>
         <div onclick="window.location.href='faceoil.html'"><img
@@ -1580,7 +1554,7 @@ width: 100%;
                         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQF8BSMLDHCMMuUPYe-UiJpZW2DxtlIhYRZtAJywvy4JMJmOZzKT3XoNzJlR4qvfc-gRsg&usqp=CAU"
                             alt="" />
                     </div>
-                    <div class="text" style="width:auto;border:1px solid red">
+                    <div class="text" >
                         <p style="color:white;width:auto; font-size: 15px;line-height:18px;">Live Beauty Help Chat is
                             Available</p>
                     </div>
