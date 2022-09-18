@@ -1,0 +1,530 @@
+#ship {
+    height: 40px;
+    background-color: gainsboro;
+    color: #cf112c;
+    text-align: center;
+}
+
+/* topdiv>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+#topdiv {
+    width: 100%;
+    height: 50px;
+    /* border:1px solid red; */
+    display: flex;
+    justify-content: space-around;
+
+}
+
+#brand {
+    padding-top: 5px;
+}
+
+#subtop {
+
+    /* border:1px solid red; */
+    display: flex;
+    justify-content: space-between;
+}
+
+#subtop>div {
+    /* border:2px solid red; */
+}
+
+body {
+    background-color: #FFFFFF;
+    ;
+}
+
+
+#topdiv>div {
+    /* border:1px solid red; */
+    width: 150px
+}
+
+
+
+
+.search {
+
+    width: 400px;
+    height: 32px;
+    margin-left: -100px;
+    font-family: "helvetica neue", helvetica, arial, sans-serif;
+    font-size: large;
+    /* margin-left: 40px; */
+    /* margin-top: 20px; */
+    border-radius: 20px;
+    border: 0px;
+    background-color: #eeeeeeea;
+    margin-top: 10px;
+
+    /* width: 100%; */
+    /* border-radius: 8px; */
+    /* background-color: rgb(246,248,248); */
+    /* height: 100%; */
+    /* border: 1px solid rgb(0, 0, 0); */
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "helvetica neue", helvetica, arial, sans-serif;
+}
+
+nav {
+    background-color: black;
+    /* position: fixed; */
+    width: 100%;
+    z-index: 999;
+    height: 65px;
+    line-height: 65px;
+
+
+}
+
+nav .containershra {
+    position: relative;
+    max-width: 1250px;
+    padding: 0 30 px;
+    height: 50px;
+    line-height: 50px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.containershra .nav-link {
+    display: inline-flex;
+}
+
+.nav-link li {
+    list-style: none;
+    /* color:white; */
+
+}
+
+.nav-link #heading>a {
+    color: antiquewhite;
+}
+
+.nav-link li a {
+    text-decoration: none;
+    /* color: black; */
+    font-size: 14px;
+    font-weight: 600;
+    padding: 10px 15px;
+    color: black;
+
+}
+
+.mega-links.white {
+    color: black;
+}
+
+.megabox {
+    position: absolute;
+    top: 100px;
+    width: 100%;
+    /* width: 180px; */
+    /* line-height: 45px; */
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+
+
+}
+
+.megabox .content {
+    background-color: white;
+
+    padding: 25px 20px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.content.row {
+    width: calc(25%-30px);
+    /* line-height: 45px; */
+}
+
+.content.row img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.content.row header {
+    color: black;
+    font-size: 20px;
+    font-weight: 600;
+
+}
+
+.content.row.megalink {
+    border-left: 1px solid rgb(255, 255, 255, 0.09);
+    margin-left: -40px;
+    
+}
+
+.row.megalink li {
+    padding: 0 20px;
+    color: black;
+
+
+}
+
+.row.megalink li a {
+    padding: 0 20px;
+    color: black;
+    font-size: 17px;
+    display: block;
+
+
+}
+
+.nav-link li:hover .megabox {
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.3s ease;
+    top: 65px;
+}
+
+#wish>img {
+    height: 80%;
+    width: 40px;
+}
+
+#cart>img {
+    height: 80%;
+    width: 40px;
+}
+
+#signin>img {
+    /* padding-top: 15px; */
+    /* border:1px solid red; */
+    height: 80%;
+    width: 40px;
+}
+
+#signin {
+    font-size: 20px;
+}
+
+/* nav ends here>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+/* frontpic csss>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+#frontpic {
+    width: 90%;
+    height: 500px;
+    margin: auto;
+     margin-bottom: 60px;
+    /* border:1px solid red */
+}
+
+#frontpic>img {
+    width: 100%;
+}
+
+p {
+    line-height: 20px;
+    font-family: georgia, times, serif;
+    font-size: 32px;
+    margin-top: 20px;
+    margin-left: 10px;
+    /* align-items: center; */
+    text-align: left;
+    /* border:1px solid red */
+
+}
+
+.patag{
+line-height: 1;
+font-family: georgia,times,serif;
+font-size: 32px;
+padding-bottom: 10px;
+color: black;
+text-align: center;
+padding-top: 15px;
+}
+
+
+#offers {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 75%;
+    /* border:1px solid red; */
+    margin: auto;
+    height: 210px;
+    gap: 15px;
+    margin-top: -50px;
+}
+
+/* #offers>div{
+border:1px solid red
+} */
+
+
+#offers>div>img {
+    width: 100%;
+    height: 100%;
+}
+
+#add2 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 75%;
+    margin: auto;
+    gap: 15px;
+    height: 340px;
+    padding-bottom: 120px;
+}
+
+#lastadd {
+    width: 70%;
+    display: grid;
+    /* border:1px solid red; */
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+
+
+
+}
+
+#Demand {
+    width: 75%;
+    height: auto;
+    margin: auto;
+    margin-top: 90px;
+    /* border:1px solid red */
+}
+
+#Demand>img {
+    width: 100%;
+    /* height: 100%; */
+    /* border:1px solid red */
+
+}
+
+
+/* slider css starts from here>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+main {
+    width: 100%;
+    height: 280px;
+    margin: 10px;
+    overflow: hidden;
+    position: relative;
+    /* border:1px solid green */
+}
+
+span {
+    position: absolute;
+    top: 30%;
+    font-size: 60px;
+    font-weight: bold;
+    color: rgb(197, 191, 191);
+    cursor: pointer;
+    left: .5%;
+    Z-index: 1;
+    /* border:1px solid red */
+}
+
+span:nth-of-type(2) {
+    left: 98%;
+    text-align: right;
+}
+
+section {
+    width: 98%;
+    height: 220px;
+    background-color: whitesmoke;
+    margin: 10px auto;
+    display: flex;
+    justify-content: left;
+    overflow-x: auto;
+    /* border:1px solid red */
+}
+
+section::-webkit-scrollbar {
+    visibility: hidden;
+}
+
+.slide {
+    min-width: 200px;
+    height: 200px;
+    position: relative;
+    left: 0;
+    text-align: center;
+    /* padding-top: 60px; */
+    font-size: 100px;
+    font-weight: bold;
+    margin: 10px 20px;
+    color: white;
+    /* background-color: purple; */
+    transition: 0.5s;
+    /* border:1px solid rgb(0, 50, 212); */
+    border-radius: 10px;
+
+}
+
+.slide>img {
+    width: 100%;
+    height: 100%;
+}
+
+/* slider css ends here>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+
+
+
+/* footerstart>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+#outerdiv{
+
+/* border: 1px solid black; */
+height: 850px;
+font-family: sans-serif;
+background-color: black;
+
+}
+#top{
+height: 50px;
+/* border: 1px solid green; */
+width: 100%;
+background-color: rgb(204,204,204)
+
+}
+#bottom{
+height: 600px;
+/* border: 1px solid red; */
+width: 100%;
+
+}
+
+#bottom>div{
+display: flex;
+
+}
+.one{
+/* border: 1px solid green; */
+height: 100px;
+justify-content: space-evenly;
+align-items: center;
+}
+.two{
+/* border: 1px solid yellow; */
+height: 500px;
+justify-content: space-evenly;
+align-items: center;
+}
+.one>div{
+width: 200px;
+height: 80px;
+/* border: 1px solid blue; */
+display: flex;
+justify-content: space-evenly;
+
+}
+
+.two>div{
+width: 200px;
+height: 500px;
+/* border: 1px solid blue; */
+
+}
+
+.two>div:last-child{
+width: 350px;
+}
+
+.one>div:last-child{
+width: 350px;
+}
+p{
+font-size: 14px;
+color: white;
+}
+.one>div>div{
+/* border: 1px solid orange; */
+height: 60px;
+}
+.img{
+width:50px ;
+}
+.text{
+width :160px
+}
+.imgl{
+width: 45px;
+}
+.textl{
+width: 350;
+}
+#last{
+
+height: 200px;
+border: 1px solid black;
+display: flex;
+justify-content: space-around;
+
+}
+#last>div{
+width: 640px;
+height: 100px;
+/* border: 1px sienna solid; */
+}
+.P{
+display: flex;
+/* border: 1px solid black; */
+
+}
+.P>a{
+margin-left: 2%;
+}
+.img>img{
+width: 50px;
+margin-top: 10px;
+
+}
+.imgl>img{
+width: 50px;
+margin-top: 10px;
+}
+h3{
+color: white;
+}
+h1{
+color: white;
+}
+#icons{
+margin-left: 50%;
+}
+a{
+color: white;
+font-size: 14px;
+padding-bottom: 3%;
+}
+.two>div>div{
+padding-bottom: 10px;
+}
+.footer{
+margin-left: 2%;
+}
+/* .imgicon>a{
+width: 100%;
+}
+*/
+.feedback{
+color: black;
+text-align: center;
+}
+.region{
+width: 30px;
+padding-top: 4%;
+}

@@ -1,0 +1,77 @@
+body{
+       
+    font-family: "helvetica neue",helvetica,arial,sans-serif; 
+    width: 50%;
+    margin: auto;
+
+  
+}
+   .priceDiv{
+    display: flex;
+    justify-content: space-between;  
+}
+
+
+
+#container{
+    display:grid;
+    grid-template-columns: repeat(1,1fr);
+    width: 100%;
+    height: auto;
+    /* border: 1px solid black; */
+    gap: 40px; 
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;  
+}
+
+
+#totalContainer>div>img{
+    width: 60px;
+    
+}
+#totalContainer>div{
+    display: flex;
+  
+  
+
+}
+#mainDiv{
+    /* border: 1px solid green; */
+    display: flex;
+    height: auto;
+    margin-left: 20px;
+}
+#mainDiv>img{
+    width: 200px;
+}
+#div2{
+    /* display: flex; */
+    margin-left: 15%;
+    width: 40%;
+    height: 100px;
+}
+button{
+    color: blue;
+    background-color: white;
+    border-color: white;
+    width: 80px;
+    height: 40px;
+    box-shadow: white
+
+}
+.line{
+    border: 0.5px solid rgb(201, 195, 195);
+    width: 100%;
+    margin: auto;
+}
+#P{
+    width: 100%;
+    color: black;
+    font-weight: bold;
+    font-size: 30px;
+    border: 0.5px solid rgb(172, 165, 165);
+}
+#total{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
