@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+
+<style>
+
+
+    * body{
+            font-family: sans-serif;
+            width: 450px;
+            margin: auto;
+            margin-top: 10%;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            justify-content: space-around;
+        }
+       
+        #form{
+            display: grid;
+            width: 400px;
+            gap:20px  ;
+            margin: auto; 
+            padding-bottom: 3%;
+        }
+        #sign{
+            width: 250px;
+            height: 40px;
+            font-size: 20px;
+            border-radius: 50px;
+            background-color: black;
+            color: rgb(238, 232, 232);
+        }
+        #create{
+            width: 250px;
+            height: 40px;
+            font-size: 20px;
+            border-radius: 50px;
+            background-color: white;
+        }
+
+        input{
+         
+            height: 30px;
+            font-size: 20px;
+        }
+
+
+
+</style>
+
+<body>
+   
+    <form id = "form">
+        <h1>Sign in to Sephora</h1>
+        <!-- <input id = "email" type="text" placeholder = "Enter email"/> -->
+        <input id = "name"  type="text" placeholder = "Enter username" required/>
+
+        <input id = "pass"  type="text" placeholder = "Enter password" required />
+        <input id ="sign" type="submit" value="Sign In"/>
+        <h2>New to Sephora?</h2>
+        <input id= "create" type="submit" value="Create Account"/>
+    </form>
+</body>
+
+</html>
+
+<script>
+ 
+
+
+var reguser = JSON.parse(localStorage.getItem("signup"))
+console.log(reguser)
+
+
+document.querySelector("#form").addEventListener("submit",formsub)
+
+var form = document.querySelector("#form")
+
+function formsub(event){
+event.preventDefault();
+    
+    var name = form.name.value;
+    var pass = form.pass.value;
+    // console.log(name,pass)
+
+    // var x = "login failed"
+    for(var i=0; i<reguser.length; i++)
+    {
+   
+        if(reguser[i].name == name && reguser[i].pass==pass)
+        {  
+            alert("login Sucessful")
+            window.location.href="index.html"
+        } 
+        else{
+            alert("login fail")
+        }
+    }  
+   
+}
+
+
+document
+                .querySelector("#create")
+                .addEventListener("click",function(){
+
+                window.location.href = "create.html"
+                })
+</script>
