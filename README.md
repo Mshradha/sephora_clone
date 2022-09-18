@@ -11,7 +11,7 @@ Sephora is a French multinational retailer of personal care and beauty products.
 
 ## Pages & Features
 
-- Homepage: Basic UI with search for Cars attached to the below of navbar.
+- Homepage: Basic UI with search .
 - Cars Page: Integrated search filter with category filterization and pagination.
 - Sign-up & Sign-in Modal
 - Details page 
